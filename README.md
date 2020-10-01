@@ -6,6 +6,6 @@ The _**Trello**_ table for the project can be found [here](https://trello.com/b/
 ---
 #### Members of the team:
 * Nóra Mózes
-* Zoltán Földes
+* Zoltán Földesi
 * Máté Kiss
 * Vajk Garbóczy 
