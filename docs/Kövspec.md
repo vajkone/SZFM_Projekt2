@@ -23,5 +23,7 @@ pusztán egy másik tabra való váltással ugyanazon applikáción belül, ezze
 akár a füzetünkben keresgélünk. Ezzel nagyban csökkenthető a tanulással járó "súrlódás", ami során sok kis apró dolgot kell elvégezni a diáknak még a tényleges tanuláshoz eljut.
 Ezeknek a lépéseknek a végigjárása gyakran azt eredményezi diákoknál, hogy a célig, ami a tényleges tanulás, a diák sosem jut el, mert egy részfolyamat közben mondjuk elterelődik
 a figyelme. Azzal hogy a tanulást biztosító eszközöket, valamint ennek és hasonló jó szokások hatékony számontartását egy fedél alá hozzuk, bizunk benne hogy nagyban növelni
-tudjuk a diákok produktivitását azzal pedig akadémiai sikereiket.
+tudjuk a diákok produktivitását azzal pedig akadémiai sikereiket. Továbbá szeretnénk ha az alkalmazás Cloud alapú lenne, azaz ha egy diák az egyik eszközről elmentett jegyzeteit,
+feljegyzett teendőit és szokásait egy másik eszközön szeretné megtekinteni akkor hitelesítő adatait (felhasználó név, jelszó) megadva, ezt további bonyodalom nélkül megtehesse. 
+
 
