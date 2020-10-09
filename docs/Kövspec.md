@@ -42,10 +42,16 @@ Cégünk jelenleg az alábbi üzleti folyamatokat végzi:
 4.3 "Hamburgermenüre" kattintva váltás a TODO lista és a jegyzetek kilistázása között.
 4.4 Jegyzetek egyszerű kilistázása.  
 4.5 Új jegyzet felvétele => egy gomb megnyomása,ami a szerkesztő felületre vált.  
-4.6 Jegyzet szerkesztési felület a Cornell módszernek megfelelően kialakítva  
-4.7 Keresés a jegyzetek között => keresés gombra kattintva keresés cím,címke és szövegrészlet alapján  
-4.8 Rendezés ABC sorrend szerint => gombra kattintva abc sorrend szerint növekvő,mégegyszer megnyomva csökkenő szerinti listázás  
-4.9 Rendezés létrehozás dátuma szerint => gombra kattintva létrehozása dátuma szerint növekvő/csökkenő kilistázás  
+4.6 Jegyzet szerkesztési felület a Cornell módszernek megfelelően kialakítva.  
+4.7 Keresés a jegyzetek között => keresés gombra kattintva keresés cím,címke és szövegrészlet alapján.  
+4.8 Rendezés ABC sorrend szerint => gombra kattintva abc sorrend szerint növekvő,mégegyszer megnyomva csökkenő szerinti listázás.  
+4.9 Rendezés létrehozás dátuma szerint => gombra kattintva létrehozása dátuma szerint növekvő/csökkenő kilistázás.
+4.10 Jegyzetek törlése => gomb megnyomásával,előtte kérdezzen rá a program hogy biztosan törölni szeretné-e az adott jegyzetet a felhasználó.  
+4.11 TODO feladatok kilistázása külön nézetben.  
+4.12 Feladat felvétele => egy gomb megnyomása ami a feladat létrehozó felületre lép át.  
+4.13 Feladatok törlése => gomb megnyomásával,előtte kérdezzen rá a program hogy biztosan törölni szeretné-e az adott feladatot a felhasználó.  
+4.14 Feladatokhoz tartozzon egy checkbox amit kipipálva jelezhetjük,hogy elvégeztük az adott feladatot.  
+4.15 Minden feladathoz lehessen egy határidőt megadni.  
 
 #### 5. A rendszerre vonatkozó szabályok  
 5.1 Az alkalmazás íródjon Kotlin vagy Java programozási nyelven, de előnyben részesítjük a kotlin nyelvet.  
