@@ -67,4 +67,22 @@ Ebben a pontban a már általunk is kiegészített folyamatokat írjuk le.
 4.5 Új jegyzet felvétele => plusz gomb megnyomása => jegyzet szerkesztő felület megjelenése => jegyzet megírása után mentésre kattintás.  
 
 ### 5. A rendszerre vonatkozó külső megszorítások  
-A megrendelő a [követlményspecifikációban](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) kifejtette, a rendszerre vonatkozó külső megszorításokat.
+A megrendelő a [követlményspecifikációban](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) kifejtette, a rendszerre vonatkozó külső megszorításokat.  
+Ezek az alábbiak:  
+
+5.1 Az alkalmazás íródjon Kotlin vagy Java programozási nyelven, de előnyben részesítjük a kotlin nyelvet.  
+5.2 Az alkalmazásban megjelenő összes kép formátuma JPEG vagy PNG legyen.  
+5.3 Az alkalmazás grafikus felületei XML-ben készüljenek.  
+5.4 Az alkalmazás működjön minden 5.0 vagy annál nagyobb verziószámú androidos mobiltelefonokon, tabletekenen.  
+5.5 A bejelentkezési adatok, a napi teendők és a jegyzetek online adatbázisban legyenek tárolva.  
+5.6 A jegyzetek szerkesztője a Cornell jegyzetelési módszert valósítsa meg.  
+5.7 Napi teendőt lehessen elvégzettnek jelölni.  
+5.8 Az alkalmazás magyar vagy angol nyelvű legyen.  
+5.9 Az alkalmazás megjelenése legyen szolid, egyszerű színek használata, rikító színeket ne tartalmazzon.  
+5.10 AZ alkalmazás legyen könnyen átlátható, ne tartalmazzon bonyolult megoldásokat.  
+
+
+
+
+
+
