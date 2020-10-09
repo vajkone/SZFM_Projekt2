@@ -43,3 +43,12 @@ fiókjához kapcsolva. Így az applikáció internetes hozzáférsést is igény
 
 ### 3. Jelenlegi üzleti folyamatok  
 Ahogy a megrendelői [követlményspecifikáció](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) is olvasható a megrendelő jelenleg az alábbi üzleti folyamatokat folytatja:  
+
+3.1 Iskolai tanácsadás.
+3.2 Igények keresése közvélemény kutatással a diákok és tanárok körében.  
+3.3 Tanulási módszerek publikálása.  
+3.4 Különböző jegyzetelési módszerek tanítása Pl.Cornell módszer.  
+3.5 Speciális igényű diákok segítése.  
+3.6 Diákok jegyzetelési szokásainak felmérése.  
+3.7 Diákok időbeosztásának kutatása.  
+3.8 Diákok helyes időbeosztásának segítése.  
