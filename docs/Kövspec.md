@@ -36,6 +36,10 @@ Cégünk jelenleg az alábbi üzleti folyamatokat végzi:
 3.7 Diákok időbeosztásának kutatása.  
 3.8 Diákok helyes időbeosztásának segítése.  
 
+#### 4. Igényelt üzleti folyamatok
+4.1 Cloudos bejelentkezés => Felhasználó név és jelszó beírása után bejelentkezés gombbal való belépés  
+4.2 Cloudos jegyzettárolás:A felhasználó másik eszközön belépve is lássa jegyzeteit
+
 #### 5. A rendszerre vonatkozó szabályok  
 5.1 Az alkalmazás íródjon Kotlin vagy Java programozási nyelven, de előnyben részesítjük a kotlin nyelvet.  
 5.2 Az alkalmazásban megjelenő összes kép formátuma JPEG vagy PNG legyen.  
