@@ -7,7 +7,7 @@ magánoktatóktól kezdve, általános és középiskolák valamint egyetemek is
 kínált előnyöket melyek a diákok javára válhatnak és ezen változtatni szeretnénk. Egyre több ügyfelünk igényel olyan szolgáltatásokat melyeket okos-eszközökön (telefon, tablet)
 vehetnek igénybe és melyek hozzájárulnak a produktivitás növeléséhez valamint akadémiai sikereikhez. Jelenlegi helyzetünkben, ha ilyen kéréssel fordulnak hozzánk, mi csak egy
 harmadik féltől származó alkalmazáshoz tudjuk ügyfeleinket továbbirányítani, valamint az alkalmazásnak a megfelelő, az ügyfél szükségleteit kielégítő használatát bemutatni és
-javasolni. Ezen szeretnénk változtatni olyan formában, hogy a legtöbbet igényelt ilyen jellegű szolgáltatásokat egy tető alá hoznánk egy, a sajátunkét értékesített applikációban.
+javasolni. Ezen szeretnénk változtatni olyan formában, hogy a legtöbbet igényelt ilyen jellegű szolgáltatásokat egy tető alá hoznánk egy, a sajátunként értékesített applikációban.
 
 #### 2. Vágyálom rendszer
 Elsősorban egyetemeken, de akár gimnáziumokban, középiskolákban is ma már sok esetben megkerülhetetlen a technológiai eszközök használata, mind oktatói mind tanulói részről.
@@ -44,8 +44,10 @@ Cégünk jelenleg az alábbi üzleti folyamatokat végzi:
 5.5 A bejelentkezési adatok, a napi teendők és a jegyzetek online adatbázisban legyenek tárolva.  
 5.6 A jegyzetek szerkesztője a Cornell jegyzetelési módszert valósítsa meg  
 5.7 Napi teendőt lehessen elvégzettnek jelölni.  
-5.9 Az alkalmazás magyar vagy angol nyelvű legyen.  
-5.8 Az alkalmazás megjelenése legyen szolid, egyszerű színek használata, rikító színeket ne tartalmazzon.  
+5.8 Az alkalmazás magyar vagy angol nyelvű legyen.  
+5.9 Az alkalmazás megjelenése legyen szolid, egyszerű színek használata, rikító színeket ne tartalmazzon.  
+5.10 AZ alkalmazás legyen könnyen átlátható, ne tartalmazzon bonyolult megoldásokat.
+
 
 #### 6. Követelménylista
 K01 Az applikáció legyen egyszerű megjelenésű, könnyen kezelhető  
@@ -59,12 +61,11 @@ K08 Ne férjen hozzá a telefonon lévő többi adathoz
 
 #### 7. Fogalomszótár
 <strong>Cornell jegyzetelési módszer</strong>: Walter Pauk által kifejlesztett, előadásokon leadott tananyag jegyzetelési és tanulási módszere, mely megkönnyíti az ismeretek rendszerezését, elsajátítását és felidézését. Egyetemi, főiskolai tanulmányok során, valamint felnőttképzésben eredményesen használható.  
-<strong>TODO lista</strong>: A tennivalók listája az időgazdálkodás és időtervezés egyik eszköze, egy felsorolás az elvégzendő teendőkről, a feladatok elvégzésének lépéseiről.  
+<strong>TODO lista</strong>: A tennivalók listája az időgazdálkodás és időtervezés egyik eszköze, egy felsorolás az elvégzendő teendőkről, a feladatok elvégzésének lépéseiről. 
 <strong>Habit tracker</strong>: A szokásfigyelő arra alkalmas, hogy napról-napra figyelemmel kísérjük szokásainkat.  
-<strong>Cloud alapú alkalmazás</strong>: Az adatok nem fizikai értelemben vett “tárolókon” helyezkednek el. A szolgáltatásokat, adatokat a felhasználók hálózaton, interneten keresztül érhetik el, bármilyen eszközről.  
 <strong>Java</strong> és <strong>Kotlin</strong>: Programozási nyelvek.  
 <strong>Android</strong>: Az Android egy Linux alapú operációs rendszer, amely elsősorban mobil készülékek és tabletek részére készült.  
 <strong>Grafikus felhasználói felület</strong>: A felhasználó és a számítógép közti kommunikációt lehetővé tevő felület, amely szöveges parancsok és üzenetek helyett részben vagy teljesen grafikus elemek segítségével teszi lehetővé a vezérlést és a visszajelzést.  
-<strong>XML</strong>: eXtensible Markup Language" (bővíthető jelölő nyelv). Ez egy általános célú leíró nyelv, melynek célja elsősorban adatok, információk, és ezek struktúráinak leírása.  
-<strong>PNG</strong>: A PNG (Portable Network Graphics) képek tárolására, veszteségmentes tömörítésére alkalmas fájlformátum.  
+<strong>XML</strong>: eXtensible Markup Language" (bővíthető jelölő nyelv). Ez egy általános célú leíró nyelv, melynek célja elsősorban adatok, információk, és ezek struktúráinak leírása.
+<strong>PNG</strong>: A PNG (Portable Network Graphics) képek tárolására, veszteségmentes tömörítésére alkalmas fájlformátum.
 <strong>JPEG</strong>: A JPEG (Joint Photographic Experts Group) képek tárolására alkalmas fájlformátum.
