@@ -65,6 +65,13 @@ Ebben a pontban a már általunk is kiegészített folyamatokat írjuk le.
 4.3 Cloudos jegyzet illetve teendők tárolása.  
 4.4 Jegyzetek egyszerű kilistázása.  
 4.5 Új jegyzet felvétele => plusz gomb megnyomása => jegyzet szerkesztő felület megjelenése => jegyzet megírása után mentésre kattintás.  
+4.6 Már meglévő jegyzet szerkesztése => jegyzetre kattintás után megjelenik a szerkesztő felület.  
+4.7 Jegyzetek törlése => "X" gomb megnyomásával,előtte  program rá kérdez hogy biztosan törölni szeretné-e az adott jegyzetet a felhasználó.  
+4.8  Keresés a jegyzetek között => keresés gombra kattintva keresés cím,címke és szövegrészlet alapján.  
+4.9 Rendezés ABC sorrend szerint => gombra kattintva abc sorrend szerint növekvő,mégegyszer megnyomva csökkenő szerinti listázás.  
+4.10 Rendezés létrehozás dátuma szerint => gombra kattintva létrehozása dátuma szerint növekvő/csökkenő kilistázás.  
+
+
 
 ### 5. A rendszerre vonatkozó külső megszorítások  
 A megrendelő a [követlményspecifikációban](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) kifejtette, a rendszerre vonatkozó külső megszorításokat.  
