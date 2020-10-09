@@ -42,7 +42,7 @@ Ezen felül az applikáció legyen cloud alapú, tehát az adatok (az elmentett 
 fiókjához kapcsolva. Így az applikáció internetes hozzáférsést is igényel.  
 
 ### 3. Jelenlegi üzleti folyamatok  
-Ahogy a megrendelői [követlményspecifikáció](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) is olvasható a megrendelő jelenleg az alábbi üzleti folyamatokat folytatja:  
+Ahogy a megrendelői [követlményspecifikáció](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md)ban is olvasható a megrendelő jelenleg az alábbi üzleti folyamatokat folytatja:  
 
 3.1 Iskolai tanácsadás.
 3.2 Igények keresése közvélemény kutatással a diákok és tanárok körében.  
@@ -66,4 +66,5 @@ Ebben a pontban a már általunk is kiegészített folyamatokat írjuk le.
 4.4 Jegyzetek egyszerű kilistázása.  
 4.5 Új jegyzet felvétele => plusz gomb megnyomása => jegyzet szerkesztő felület megjelenése => jegyzet megírása után mentésre kattintás.  
 
-
+### 5. A rendszerre vonatkozó külső megszorítások  
+A megrendelő a [követlményspecifikációban](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) kifejtette, a rendszerre vonatkozó külső megszorításokat.
