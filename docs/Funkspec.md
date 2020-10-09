@@ -60,3 +60,10 @@ Ahogy a megrendelői [követlményspecifikáció](https://github.com/vajkone/SZF
 A megrendelő a [követlményspecifikációban](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) kifejtette,hogy milyen folyamatokat szeretne megvalósítani.A már meglévő üzleti folyamataihoz,szeretne egy mobilalkalmazás kifejlesztését,amiben a felhasználók jegyzeteket tudnának létrehozni,illetve a különböző napi teendőiket követni.
 Ebben a pontban a már általunk is kiegészített folyamatokat írjuk le.
 
+4.1 Cloudos bejelentkezés => Felhasználó név és jelszó beírása után bejelentkezés gombbal belépés.  
+4.2 Ha még nem regisztrált felhasználó,akkor új fiók létrehozása gombbal, új fiókot lehet regisztrálni.  
+4.3 Cloudos jegyzet illetve teendők tárolása.  
+4.4 Jegyzetek egyszerű kilistázása.  
+4.5 Új jegyzet felvétele => plusz gomb megnyomása => jegyzet szerkesztő felület megjelenése => jegyzet megírása után mentésre kattintás.  
+
+
