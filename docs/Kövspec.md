@@ -31,7 +31,10 @@ Cégünk jelenleg az alábbi üzleti folyamatokat végzi:
 3.2 Igények keresése közvélemény kutatással a diákok és tanárok körében.  
 3.3 Tanulási módszerek publikálása.  
 3.4 Különböző jegyzetelési módszerek tanítása Pl.Cornell módszer.  
-3.5 Speciális igényű diákok segítése  
+3.5 Speciális igényű diákok segítése.  
+3.6 Diákok jegyzetelési szokásainak felmérése.  
+3.7 Diákok időbeosztásának kutatása.  
+3.8 Diákok helyes időbeosztásának segítése.  
 
 #### 5. A rendszerre vonatkozó szabályok  
 5.1 Az alkalmazás íródjon Kotlin vagy Java programozási nyelven, de előnyben részesítjük a kotlin nyelvet.  
