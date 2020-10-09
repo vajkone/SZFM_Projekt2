@@ -76,6 +76,9 @@ Ebben a pontban a már általunk is kiegészített folyamatokat írjuk le.
 4.14 A feladatokhoz tartozik egy checkbox,amit kipipálva jelezheti a felhasználó,hogy elvégezte a feladatot.  
 4.15 Minden feladathoz megadható egy határidő.  
 
+A megrendelő a [követlményspecifikáció](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) 4.3-as pontjában a "hamburgermenü" alkalmazását szerette volna navigálásra használni a különböző nézetek között. Mi azonban a "hamburgermenü" helyett egy "Tabbed" nézetet javaslunk. A képernyő felső részén 3 fül között lehet választani.
+A jegyzetek,TODO lista illetve a szokások követése között. Ezáltal egy kényelmesebb felhasználói élményt hozhatunk létre.  
+
 
 
 ### 5. A rendszerre vonatkozó külső megszorítások  
