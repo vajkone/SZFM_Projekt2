@@ -53,4 +53,10 @@ Ahogy a megrendelői [követlményspecifikáció](https://github.com/vajkone/SZF
 3.7 Diákok időbeosztásának kutatása.  
 3.8 Diákok helyes időbeosztásának segítése.  
 
-Összeségében tehát, a fentiek alapján a programnak a lehető legjobban diákbarátnak kell lennie, továbbá megfelelőnek kell lennie, akár speciális igényű diákoknak is. Semmilyen felesleges, esetekben bonyolultabb funkciót nem tartalmazhat. A cél, hogy a program teljesen beleilleszkedjen a cég jelenleg is végzett tevékenységeibe.
+Összeségében tehát, a fentiek alapján a programnak a lehető legjobban diákbarátnak kell lennie, továbbá megfelelőnek kell lennie, akár speciális igényű diákoknak is. Semmilyen felesleges, esetekben bonyolultabb funkciót nem tartalmazhat. A cél, hogy a program teljesen beleilleszkedjen a cég jelenleg is végzett tevékenységeibe.  
+
+### 4. Igényelt üzleti folyamatok
+
+A megrendelő a [követlményspecifikációban](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) kifejtette,hogy milyen folyamatokat szeretne megvalósítani.A már meglévő üzleti folyamataihoz,szeretne egy mobilalkalmazás kifejlesztését,amiben a felhasználók jegyzeteket tudnának létrehozni,illetve a különböző napi teendőiket követni.
+Ebben a pontban a már általunk is kiegészített folyamatokat írjuk le.
+
