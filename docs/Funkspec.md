@@ -70,6 +70,11 @@ Ebben a pontban a már általunk is kiegészített folyamatokat írjuk le.
 4.8  Keresés a jegyzetek között => keresés gombra kattintva keresés cím,címke és szövegrészlet alapján.  
 4.9 Rendezés ABC sorrend szerint => gombra kattintva abc sorrend szerint növekvő,mégegyszer megnyomva csökkenő szerinti listázás.  
 4.10 Rendezés létrehozás dátuma szerint => gombra kattintva létrehozása dátuma szerint növekvő/csökkenő kilistázás.  
+4.11 Teendők egyszerű kilistázása.  
+4.12 Feladat felvétele => egy gomb megnyomása ami a feladat létrehozó felületre lép át.  
+4.13 Feladatok törlése => gomb megnyomásával,előtte  rá kérdez a program hogy biztosan törölni szeretné-e az adott feladatot a felhasználó.  
+4.14 A feladatokhoz tartozik egy checkbox,amit kipipálva jelezheti a felhasználó,hogy elvégezte a feladatot.  
+4.15 Minden feladathoz megadható egy határidő.  
 
 
 
