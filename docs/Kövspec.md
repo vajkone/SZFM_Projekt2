@@ -24,6 +24,13 @@ akár a füzetünkben keresgélünk. Ezzel nagyban csökkenthető a tanulással 
 Ezeknek a lépéseknek a végigjárása gyakran azt eredményezi diákoknál, hogy a célig, ami a tényleges tanulás, a diák sosem jut el, mert egy részfolyamat közben mondjuk elterelődik
 a figyelme. Azzal hogy a tanulást biztosító eszközöket, valamint ennek és hasonló jó szokások hatékony számontartását egy fedél alá hozzuk, bizunk benne hogy nagyban növelni
 tudjuk a diákok produktivitását azzal pedig akadémiai sikereiket. Továbbá szeretnénk ha az alkalmazás Cloud alapú lenne, azaz ha egy diák az egyik eszközről elmentett jegyzeteit,
-feljegyzett teendőit és szokásait egy másik eszközön szeretné megtekinteni akkor hitelesítő adatait (felhasználó név, jelszó) megadva, ezt további bonyodalom nélkül megtehesse. 
+feljegyzett teendőit és szokásait egy másik eszközön szeretné megtekinteni akkor hitelesítő adatait (felhasználó név, jelszó) megadva, ezt további bonyodalom nélkül megtehesse.    
 
-
+#### 5. A rendszerre vonatkozó szabályok  
+5.1 Az alkalmazás íródjon Kotlin vagy Java programozási nyelven, de előnyben részesítjük a kotlin nyelvet.  
+5.2 Az alkalmazásban megjelenő összes kép formátuma JPEG vagy PNG legyen.  
+5.3 Az alkalmazás grafikus felületei XML-ben készüljenek.  
+5.4 Az alkalmazás működjön minden 5.0 vagy annál nagyobb verziószámú androidos mobiltelefonokon, tabletekenen.  
+5.5 A bejelentkezési adatok, a napi teendők és a jegyzetek online adatbázisban legyenek tárolva.  
+5.6 A jegyzetek szerkesztője a Cornell jegyzetelési módszert valósítsa meg  
+5.7 Napi teendőt lehessen elvégzettnek jelölni.  
