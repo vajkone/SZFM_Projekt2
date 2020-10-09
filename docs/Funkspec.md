@@ -81,6 +81,8 @@ Ezek az alábbiak:
 5.9 Az alkalmazás megjelenése legyen szolid, egyszerű színek használata, rikító színeket ne tartalmazzon.  
 5.10 AZ alkalmazás legyen könnyen átlátható, ne tartalmazzon bonyolult megoldásokat.  
 
+A cég álltal megadott megszorítások teljesíthetőek, ezért teljes mértékben, a megrendelő igényei szerint fogjuk létrehozni az applikációt.  
+
 
 
 
