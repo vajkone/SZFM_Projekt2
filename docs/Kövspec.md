@@ -34,6 +34,8 @@ feljegyzett teendőit és szokásait egy másik eszközön szeretné megtekinten
 5.5 A bejelentkezési adatok, a napi teendők és a jegyzetek online adatbázisban legyenek tárolva.  
 5.6 A jegyzetek szerkesztője a Cornell jegyzetelési módszert valósítsa meg  
 5.7 Napi teendőt lehessen elvégzettnek jelölni.  
+5.9 Az alkalmazás magyar vagy angol nyelvű legyen.  
+5.8 Az alkalmazás megjelenése legyen szolid, egyszerű színek használata, rikító színeket ne tartalmazzon.  
 
 #### 6. Követelménylista
 K01 Az applikáció legyen egyszerű, könnyen kezelhető  
@@ -41,5 +43,4 @@ K02 Letisztult, modern grafikus felülettel rendelkezzen
 K03 Az alkalmazás legyen alacsony rendszerigényű  
 K04 Ne tartalmazzon felesleges funkciókat  
 K05 Az applikáció legyen Cloud alapú  
-K06 Felhasználónév, jelszó megadásával lehessen bejelentkezni  
-K07 Ne férjen hozzá a telefonon lévő többi adathoz  
+K06 Ne férjen hozzá a telefonon lévő többi adathoz  
