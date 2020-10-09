@@ -41,4 +41,5 @@ K02 Letisztult, modern grafikus felülettel rendelkezzen
 K03 Az alkalmazás legyen alacsony rendszerigényű  
 K04 Ne tartalmazzon felesleges funkciókat  
 K05 Az applikáció legyen Cloud alapú  
-K06 Ne férjen hozzá a telefonon lévő többi adathoz  
+K06 Felhasználónév, jelszó megadásával lehessen bejelentkezni  
+K07 Ne férjen hozzá a telefonon lévő többi adathoz  
