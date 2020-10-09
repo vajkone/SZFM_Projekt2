@@ -39,4 +39,7 @@ hitelesítő adatait (felhasználó név, jelszó) megadva, ezt további bonyoda
 - Szokások nyomonkövetése  
 
 Ezen felül az applikáció legyen cloud alapú, tehát az adatok (az elmentett jegyzetek, teendők és szokások) ne helyileg legyenek tárolva az eszközön, hanem felhőben, a diákok
-fiókjához kapcsolva. Így az applikáció internetes hozzáférsést is igényel.
+fiókjához kapcsolva. Így az applikáció internetes hozzáférsést is igényel.  
+
+### 3. Jelenlegi üzleti folyamatok  
+Ahogy a megrendelői [követlményspecifikáció](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) is olvasható a megrendelő jelenleg az alábbi üzleti folyamatokat folytatja:  
