@@ -37,8 +37,11 @@ Cégünk jelenleg az alábbi üzleti folyamatokat végzi:
 3.8 Diákok helyes időbeosztásának segítése.  
 
 #### 4. Igényelt üzleti folyamatok
-4.1 Cloudos bejelentkezés => Felhasználó név és jelszó beírása után bejelentkezés gombbal való belépés  
-4.2 Cloudos jegyzettárolás:A felhasználó másik eszközön belépve is lássa jegyzeteit
+4.1 Cloudos bejelentkezés => Felhasználó név és jelszó beírása után bejelentkezés gombbal való belépés.  
+4.2 Cloudos jegyzettárolás:A felhasználó másik eszközön belépve is lássa jegyzeteit.  
+4.3 "Hamburgermenüre" kattintva váltás a TODO lista és a jegyzetek kilistázása között.
+4.4 Jegyzetek egyszerű kilistázása.  
+4.5 Új jegyzet felvétele => egy gomb megnyomása,ami a szerkesztő felületre vált.  
 
 #### 5. A rendszerre vonatkozó szabályok  
 5.1 Az alkalmazás íródjon Kotlin vagy Java programozási nyelven, de előnyben részesítjük a kotlin nyelvet.  
