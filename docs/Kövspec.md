@@ -59,11 +59,12 @@ K08 Ne férjen hozzá a telefonon lévő többi adathoz
 
 #### 7. Fogalomszótár
 <strong>Cornell jegyzetelési módszer</strong>: Walter Pauk által kifejlesztett, előadásokon leadott tananyag jegyzetelési és tanulási módszere, mely megkönnyíti az ismeretek rendszerezését, elsajátítását és felidézését. Egyetemi, főiskolai tanulmányok során, valamint felnőttképzésben eredményesen használható.  
-<strong>TODO lista</strong>: A tennivalók listája az időgazdálkodás és időtervezés egyik eszköze, egy felsorolás az elvégzendő teendőkről, a feladatok elvégzésének lépéseiről. 
+<strong>TODO lista</strong>: A tennivalók listája az időgazdálkodás és időtervezés egyik eszköze, egy felsorolás az elvégzendő teendőkről, a feladatok elvégzésének lépéseiről.  
 <strong>Habit tracker</strong>: A szokásfigyelő arra alkalmas, hogy napról-napra figyelemmel kísérjük szokásainkat.  
+<strong>Cloud alapú alkalmazás</strong>: Az adatok nem fizikai értelemben vett “tárolókon” helyezkednek el. A szolgáltatásokat, adatokat a felhasználók hálózaton, interneten keresztül érhetik el, bármilyen eszközről.  
 <strong>Java</strong> és <strong>Kotlin</strong>: Programozási nyelvek.  
 <strong>Android</strong>: Az Android egy Linux alapú operációs rendszer, amely elsősorban mobil készülékek és tabletek részére készült.  
 <strong>Grafikus felhasználói felület</strong>: A felhasználó és a számítógép közti kommunikációt lehetővé tevő felület, amely szöveges parancsok és üzenetek helyett részben vagy teljesen grafikus elemek segítségével teszi lehetővé a vezérlést és a visszajelzést.  
-<strong>XML</strong>: eXtensible Markup Language" (bővíthető jelölő nyelv). Ez egy általános célú leíró nyelv, melynek célja elsősorban adatok, információk, és ezek struktúráinak leírása.
-<strong>PNG</strong>: A PNG (Portable Network Graphics) képek tárolására, veszteségmentes tömörítésére alkalmas fájlformátum.
+<strong>XML</strong>: eXtensible Markup Language" (bővíthető jelölő nyelv). Ez egy általános célú leíró nyelv, melynek célja elsősorban adatok, információk, és ezek struktúráinak leírása.  
+<strong>PNG</strong>: A PNG (Portable Network Graphics) képek tárolására, veszteségmentes tömörítésére alkalmas fájlformátum.  
 <strong>JPEG</strong>: A JPEG (Joint Photographic Experts Group) képek tárolására alkalmas fájlformátum.
