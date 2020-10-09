@@ -45,9 +45,11 @@ Cégünk jelenleg az alábbi üzleti folyamatokat végzi:
 5.8 Az alkalmazás megjelenése legyen szolid, egyszerű színek használata, rikító színeket ne tartalmazzon.  
 
 #### 6. Követelménylista
-K01 Az applikáció legyen egyszerű, könnyen kezelhető  
-K02 Letisztult, modern grafikus felülettel rendelkezzen  
-K03 Az alkalmazás legyen alacsony rendszerigényű  
-K04 Ne tartalmazzon felesleges funkciókat  
-K05 Az applikáció legyen Cloud alapú  
-K06 Ne férjen hozzá a telefonon lévő többi adathoz  
+K01 Az applikáció legyen egyszerű megjelenésű, könnyen kezelhető  
+K02 Letisztult, igényes, modern grafikus felülettel rendelkezzen  
+K03 A színek, képek, ikonok legyenek összhangban, ne üssenek el egymástól  
+K04 Az alkalmazás legyen alacsony rendszerigényű  
+K05 Ne tartalmazzon felesleges funkciókat  
+K06 Az applikáció legyen Cloud alapú  
+K07 Felhasználónév, jelszó megadásával lehessen bejelentkezni  
+K08 Ne férjen hozzá a telefonon lévő többi adathoz
