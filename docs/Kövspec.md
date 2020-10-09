@@ -86,3 +86,5 @@ K08 Ne férjen hozzá a telefonon lévő többi adathoz
 <strong>XML</strong>: eXtensible Markup Language" (bővíthető jelölő nyelv). Ez egy általános célú leíró nyelv, melynek célja elsősorban adatok, információk, és ezek struktúráinak leírása.  
 <strong>PNG</strong>: A PNG (Portable Network Graphics) képek tárolására, veszteségmentes tömörítésére alkalmas fájlformátum.  
 <strong>JPEG</strong>: A JPEG (Joint Photographic Experts Group) képek tárolására alkalmas fájlformátum.
+<strong>Hamburgermenü<strong>: Programozók által,általában a bal sarokban lévő 3 vízszintes ikonra hivatkozik,amely egy menülistát nyit meg.  
+<strong>Checkbox<strong>: A felhasználói felületen látható,kis doboz,amit a felhasználó kipipálhat(rákattintva arra) ezáltal egy bináris döntést hoz meg,jelen esetben ha ki van pipálva akkor kész a feladat,ha nincs akkor nincs kész az adott feladat.  
