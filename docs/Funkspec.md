@@ -1,7 +1,7 @@
 Funkcionális specifikáció
 -------------------------
 
-#### 1. Jelenleg helyzet leírása
+### 1. Jelenleg helyzet leírása
 A megrendelő jelenlegi helyzete a [követlményspecifikáció](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) alapján az alábbi:  
 
 *Cégünk oktatási, nevelési, módszertani tanácsadás, szakmai tervezés és egyéb oktatást kiegészítő, de nem közvetlenül oktatási szolgáltatásokat kínál. Ügyfeleink közé tartoznak
@@ -13,3 +13,28 @@ Ezen szeretnénk változtatni olyan formában, hogy a legtöbbet igényelt ilyen
 
 A megrendelő cég jelenleg helyzetét mérlegelve és a cég igényei alapján elképzelt termékkel szemben támasztott követelményeket szem előtt tartva az alábbi funkcionális
 specifikációban adjuk válaszunkat.
+
+
+### 2. Vágyálom rendszer leírása
+A megrendelő cég egy olyan mobil (android) applikáció fejlesztésével kereste meg cégünket melyet oktatásfejlesztési, tanulásjavítási és produktívtás növelési céllal ajánlana/
+értékesítene azon ügyfeleinek akik elsősorban középiskolai és egyetemi diákok:  
+*"elsősorban egyetemeknek és azok hallgatóinak (szeretnénk) egy olyan applikációt ajánlani, ami segíti őket az órai/előadásokon történő hatékony jegyzetelésben, hasznos és
+produktív szokásaik monitorozásában (habit tracking), valamint elkészítendő feladataik hatékony feljegyzésében és nyomonkövetésében (TODO List). Az alkalmazás jegyzetelő részét
+a világhírű Cornell jegyzetelési metódus mobilra illetve tabletre való átültetésével szeretnénk elérni. Ehhez egy könnyen, "macera nélkül" kezelhető felületre van szükség, ami
+három részre (kérdések/kulcsszavak, jegyzet, összefoglaló) osztja az eszköz képernyőjét. Az egyes részek legyenek egymástól láthatóan elkülönítve, használatuk legyen intuitív. A
+diákok a jegyzeteiket tudják könnyen elmenteni, keresni, módosítani, törölni, továbbá számukra logikus csoportokba (pl tantárgy szerint) rendezni. Azzal hogy a jegyzetjeik
+mellett a diákok a jó szokásaikat és elvégzendő feladataikat is nyomon tudják követni, azt reméljük, hogy az applikáció ezen három eleme harmóniában élve egymással, elősegítik
+egymást, pl egy olyan TODO hogy "jegyzetek átnézése" rögtön megoldható pusztán egy másik tabra való váltással ugyanazon applikáción belül, ezzel megspórolva az azzal járó
+fáradtságot hogy kikeressük majd megnyitünk egy másik jegyzetelő appot, vagy akár a füzetünkben keresgélünk. Ezzel nagyban csökkenthető a tanulással járó "súrlódás", ami során
+sok kis apró dolgot kell elvégezni a diáknak még a tényleges tanuláshoz eljut. Ezeknek a lépéseknek a végigjárása gyakran azt eredményezi diákoknál, hogy a célig, ami a
+tényleges tanulás, a diák sosem jut el, mert egy részfolyamat közben mondjuk elterelődik a figyelme. Azzal hogy a tanulást biztosító eszközöket, valamint ennek és hasonló jó
+szokások hatékony számontartását egy fedél alá hozzuk, bizunk benne hogy nagyban növelni tudjuk a diákok produktivitását azzal pedig akadémiai sikereiket. Továbbá szeretnénk ha
+az alkalmazás Cloud alapú lenne, azaz ha egy diák az egyik eszközről elmentett jegyzeteit, feljegyzett teendőit és szokásait egy másik eszközön szeretné megtekinteni akkor
+hitelesítő adatait (felhasználó név, jelszó) megadva, ezt további bonyodalom nélkül megtehesse."*  
+Összefoglalva tehát egy olyan applikáció megteremtése a cél mely három fő funkcióval rendelkezik:
+- Jegyzetelés
+- Teendők számontartása
+- Szokások nyomonkövetése  
+
+Ezen felül az applikáció legyen cloud alapú, tehát az adatok (az elmentett jegyzetek, teendők és szokások) ne helyileg legyenek tárolva az eszközön, hanem felhőben, a diákok
+fiókjához kapcsolva. Így az applikáció internetes hozzáférsést is igényel.
