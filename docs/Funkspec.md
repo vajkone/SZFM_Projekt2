@@ -52,3 +52,5 @@ Ahogy a megrendelői [követlményspecifikáció](https://github.com/vajkone/SZF
 3.6 Diákok jegyzetelési szokásainak felmérése.  
 3.7 Diákok időbeosztásának kutatása.  
 3.8 Diákok helyes időbeosztásának segítése.  
+
+Összeségében tehát, a fentiek alapján a programnak a lehető legjobban diákbarátnak kell lennie, továbbá megfelelőnek kell lennie, akár speciális igényű diákoknak is. Semmilyen felesleges, esetekben bonyolultabb funkciót nem tartalmazhat. A cél, hogy a program teljesen beleilleszkedjen a cég jelenleg is végzett tevékenységeibe.
