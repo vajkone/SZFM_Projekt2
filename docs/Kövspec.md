@@ -39,13 +39,13 @@ Cégünk jelenleg az alábbi üzleti folyamatokat végzi:
 #### 4. Igényelt üzleti folyamatok
 4.1 Cloudos bejelentkezés => Felhasználó név és jelszó beírása után bejelentkezés gombbal való belépés.  
 4.2 Cloudos jegyzettárolás:A felhasználó másik eszközön belépve is lássa jegyzeteit.  
-4.3 "Hamburgermenüre" kattintva váltás a TODO lista és a jegyzetek kilistázása között.
+4.3 "Hamburgermenüre" kattintva váltás a TODO lista és a jegyzetek kilistázása között.  
 4.4 Jegyzetek egyszerű kilistázása.  
 4.5 Új jegyzet felvétele => egy gomb megnyomása,ami a szerkesztő felületre vált.  
 4.6 Jegyzet szerkesztési felület a Cornell módszernek megfelelően kialakítva.  
 4.7 Keresés a jegyzetek között => keresés gombra kattintva keresés cím,címke és szövegrészlet alapján.  
 4.8 Rendezés ABC sorrend szerint => gombra kattintva abc sorrend szerint növekvő,mégegyszer megnyomva csökkenő szerinti listázás.  
-4.9 Rendezés létrehozás dátuma szerint => gombra kattintva létrehozása dátuma szerint növekvő/csökkenő kilistázás.
+4.9 Rendezés létrehozás dátuma szerint => gombra kattintva létrehozása dátuma szerint növekvő/csökkenő kilistázás.  
 4.10 Jegyzetek törlése => gomb megnyomásával,előtte kérdezzen rá a program hogy biztosan törölni szeretné-e az adott jegyzetet a felhasználó.  
 4.11 TODO feladatok kilistázása külön nézetben.  
 4.12 Feladat felvétele => egy gomb megnyomása ami a feladat létrehozó felületre lép át.  
@@ -78,7 +78,7 @@ K08 Ne férjen hozzá a telefonon lévő többi adathoz
 
 #### 7. Fogalomszótár
 <strong>Cornell jegyzetelési módszer</strong>: Walter Pauk által kifejlesztett, előadásokon leadott tananyag jegyzetelési és tanulási módszere, mely megkönnyíti az ismeretek rendszerezését, elsajátítását és felidézését. Egyetemi, főiskolai tanulmányok során, valamint felnőttképzésben eredményesen használható.  
-<strong>TODO lista</strong>: A tennivalók listája az időgazdálkodás és időtervezés egyik eszköze, egy felsorolás az elvégzendő teendőkről, a feladatok elvégzésének lépéseiről. 
+<strong>TODO lista</strong>: A tennivalók listája az időgazdálkodás és időtervezés egyik eszköze, egy felsorolás az elvégzendő teendőkről, a feladatok elvégzésének lépéseiről.  
 <strong>Habit tracker</strong>: A szokásfigyelő arra alkalmas, hogy napról-napra figyelemmel kísérjük szokásainkat.  
 <strong>Java</strong> és <strong>Kotlin</strong>: Programozási nyelvek.  
 <strong>Android</strong>: Az Android egy Linux alapú operációs rendszer, amely elsősorban mobil készülékek és tabletek részére készült.  
