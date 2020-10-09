@@ -18,6 +18,7 @@ specifikációban adjuk válaszunkat.
 ### 2. Vágyálom rendszer leírása
 A megrendelő cég egy olyan mobil (android) applikáció fejlesztésével kereste meg cégünket melyet oktatásfejlesztési, tanulásjavítási és produktívtás növelési céllal ajánlana/
 értékesítene azon ügyfeleinek akik elsősorban középiskolai és egyetemi diákok:  
+
 *"elsősorban egyetemeknek és azok hallgatóinak (szeretnénk) egy olyan applikációt ajánlani, ami segíti őket az órai/előadásokon történő hatékony jegyzetelésben, hasznos és
 produktív szokásaik monitorozásában (habit tracking), valamint elkészítendő feladataik hatékony feljegyzésében és nyomonkövetésében (TODO List). Az alkalmazás jegyzetelő részét
 a világhírű Cornell jegyzetelési metódus mobilra illetve tabletre való átültetésével szeretnénk elérni. Ehhez egy könnyen, "macera nélkül" kezelhető felületre van szükség, ami
@@ -31,6 +32,7 @@ tényleges tanulás, a diák sosem jut el, mert egy részfolyamat közben mondju
 szokások hatékony számontartását egy fedél alá hozzuk, bizunk benne hogy nagyban növelni tudjuk a diákok produktivitását azzal pedig akadémiai sikereiket. Továbbá szeretnénk ha
 az alkalmazás Cloud alapú lenne, azaz ha egy diák az egyik eszközről elmentett jegyzeteit, feljegyzett teendőit és szokásait egy másik eszközön szeretné megtekinteni akkor
 hitelesítő adatait (felhasználó név, jelszó) megadva, ezt további bonyodalom nélkül megtehesse."*  
+
 Összefoglalva tehát egy olyan applikáció megteremtése a cél mely három fő funkcióval rendelkezik:
 - Jegyzetelés
 - Teendők számontartása
