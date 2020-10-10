@@ -98,7 +98,17 @@ Ezek az alábbiak:
 
 A cég álltal megadott megszorítások teljesíthetőek, ezért teljes mértékben, a megrendelő igényei szerint fogjuk létrehozni az applikációt.  
 
-
+#### 6. Követelménylista
+A megrendelői [követlményspecifikációban](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md#6-k%C3%B6vetelm%C3%A9nylista) összeállított követelménylistából az általunk elgondolt applikáció az összes pontnak megfelel.  
+Ezek a követelmények az alábbiak voltak:  
+K01 Az applikáció legyen egyszerű megjelenésű, könnyen kezelhető  
+K02 Letisztult, igényes, modern grafikus felülettel rendelkezzen  
+K03 A színek, képek, ikonok legyenek összhangban, ne üssenek el egymástól  
+K04 Az alkalmazás legyen alacsony rendszerigényű  
+K05 Ne tartalmazzon felesleges funkciókat  
+K06 Az applikáció legyen Cloud alapú  
+K07 Felhasználónév, jelszó megadásával lehessen bejelentkezni  
+K08 Ne férjen hozzá a telefonon lévő többi adathoz  
 
 
 
