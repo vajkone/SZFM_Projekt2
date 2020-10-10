@@ -82,7 +82,7 @@ A jegyzetek,TODO lista illetve a szokások követése között. Ezáltal egy ké
 
 
 ### 5. A rendszerre vonatkozó külső megszorítások  
-A megrendelő a [követlményspecifikációban](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) kifejtette, a rendszerre vonatkozó külső megszorításokat.  
+A megrendelő a [követelményspecifikációban](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) kifejtette, a rendszerre vonatkozó külső megszorításokat.  
 Ezek az alábbiak:  
 
 5.1 Az alkalmazás íródjon Kotlin vagy Java programozási nyelven, de előnyben részesítjük a kotlin nyelvet.  
@@ -98,9 +98,10 @@ Ezek az alábbiak:
 
 A cég álltal megadott megszorítások teljesíthetőek, ezért teljes mértékben, a megrendelő igényei szerint fogjuk létrehozni az applikációt.  
 
-#### 6. Követelménylista
-A megrendelői [követlményspecifikációban](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md#6-k%C3%B6vetelm%C3%A9nylista) összeállított követelménylistából az általunk elgondolt applikáció az összes pontnak megfelel.  
+### 6. Követelménylista
+A megrendelői [követelményspecifikációban](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md#6-k%C3%B6vetelm%C3%A9nylista) összeállított követelménylistából az általunk elgondolt applikáció az összes pontnak megfelel.  
 Ezek a követelmények az alábbiak voltak:  
+
 K01 Az applikáció legyen egyszerű megjelenésű, könnyen kezelhető  
 K02 Letisztult, igényes, modern grafikus felülettel rendelkezzen  
 K03 A színek, képek, ikonok legyenek összhangban, ne üssenek el egymástól  
@@ -109,6 +110,11 @@ K05 Ne tartalmazzon felesleges funkciókat
 K06 Az applikáció legyen Cloud alapú  
 K07 Felhasználónév, jelszó megadásával lehessen bejelentkezni  
 K08 Ne férjen hozzá a telefonon lévő többi adathoz  
+
+### 7. Fogalomszótár
+<strong>Cornell jegyzetelési módszer</strong>: Walter Pauk által kifejlesztett, előadásokon leadott tananyag jegyzetelési és tanulási módszere, mely megkönnyíti az ismeretek rendszerezését, elsajátítását és felidézését. Egyetemi, főiskolai tanulmányok során, valamint felnőttképzésben eredményesen használható.  
+<strong>TODO lista</strong>: A tennivalók listája az időgazdálkodás és időtervezés egyik eszköze, egy felsorolás az elvégzendő teendőkről, a feladatok elvégzésének lépéseiről.  
+<strong>Habit tracker</strong>: A szokásfigyelő arra alkalmas, hogy napról-napra figyelemmel kísérjük szokásainkat.  
 
 
 
