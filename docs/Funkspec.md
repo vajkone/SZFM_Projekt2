@@ -125,5 +125,9 @@ K08 Ne férjen hozzá a telefonon lévő többi adathoz
 <strong>Hamburgermenü</strong>: Programozók által, általában a bal sarokban lévő 3 vízszintes ikonra hivatkozik,amely egy menülistát nyit meg.  
 <strong>Checkbox</strong>: A felhasználói felületen látható kis doboz, amit a felhasználó kipipálhat (rákattintva arra) ezáltal egy bináris döntést hoz meg, jelen esetben ha ki van pipálva akkor kész a feladat, ha nincs akkor nincs kész az adott feladat.  
 
+### 8. Használati esetek
 
+Használati eset diagramm:  
+
+![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/usecase.png "usecase diagram")
 
