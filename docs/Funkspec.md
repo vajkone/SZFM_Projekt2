@@ -131,3 +131,8 @@ Használati eset diagramm:
 
 ![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/usecase.png "usecase diagram")
 
+### 9. Képernyő tervek
+
+![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/designplan1.png "design plan 1")
+![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/designplan2.png "design plan 2")
+
