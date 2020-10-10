@@ -139,5 +139,11 @@ Látható még,hogy minden cselekvés egy cloud adatbázishoz is tartozik,mivel 
 ### 9. Képernyő tervek
 
 ![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/designplan1.png "design plan 1")
-![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/designplan2.png "design plan 2")
+![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/designplan2.png "design plan 2")  
+
+### 10. Forgatókönyvek  
+Az alábbiakban leírjuk az Igényelt üzleti folyamatokban meghatározott folyamatok forgatókönyveit:  
+* Bejelentkezés: A felhasználó az Email-cím és a jelszó megadása után a LOGIN gomb megnyomásával bejelentkezik, a saját fiókjába. Ha egy felhasználó még nem rendelkezik fiókkal, akkor a "Sign up now." felíratra kattintva regisztrálni tud az alkalmazásba.  
+* Regisztráció: Egy felhasználó regisztrálni tud, ha megadja a nevét, az Email címét és megad egy jelszót. Ezek után a REGISTER gombra kattintva, a felhasználó regisztrálva lesz az alkalmazásba.  
+
 
