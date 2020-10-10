@@ -2,7 +2,7 @@ Funkcionális specifikáció
 -------------------------
 
 ### 1. Jelenleg helyzet leírása
-A megrendelő jelenlegi helyzete a [követlményspecifikáció](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) alapján az alábbi:  
+A megrendelő jelenlegi helyzete a [követelményspecifikáció](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) alapján az alábbi:  
 
 *Cégünk oktatási, nevelési, módszertani tanácsadás, szakmai tervezés és egyéb oktatást kiegészítő, de nem közvetlenül oktatási szolgáltatásokat kínál. Ügyfeleink közé tartoznak
 magánoktatóktól kezdve, általános és középiskolák valamint egyetemek is. Jelenlegi módszertanási ajánlásaink nem veszik teljesen figyelmbe a technológiai fejlesztések által kínált
@@ -42,7 +42,7 @@ Ezen felül az applikáció legyen cloud alapú, tehát az adatok (az elmentett 
 fiókjához kapcsolva. Így az applikáció internetes hozzáférsést is igényel.  
 
 ### 3. Jelenlegi üzleti folyamatok  
-Ahogy a megrendelői [követlményspecifikáció](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md)ban is olvasható a megrendelő jelenleg az alábbi üzleti folyamatokat folytatja:  
+Ahogy a megrendelői [követelményspecifikáció](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md#3-jelenlegi-%C3%BCzleti-folyamatok)ban is olvasható a megrendelő jelenleg az alábbi üzleti folyamatokat folytatja:  
 
 3.1 Iskolai tanácsadás.
 3.2 Igények keresése közvélemény kutatással a diákok és tanárok körében.  
@@ -57,7 +57,7 @@ Ahogy a megrendelői [követlményspecifikáció](https://github.com/vajkone/SZF
 
 ### 4. Igényelt üzleti folyamatok
 
-A megrendelő a [követlményspecifikációban](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) kifejtette,hogy milyen folyamatokat szeretne megvalósítani.A már meglévő üzleti folyamataihoz,szeretne egy mobilalkalmazás kifejlesztését,amiben a felhasználók jegyzeteket tudnának létrehozni,illetve a különböző napi teendőiket követni.
+A megrendelő a [követelményspecifikációban](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md#4-ig%C3%A9nyelt-%C3%BCzleti-folyamatok) kifejtette,hogy milyen folyamatokat szeretne megvalósítani.A már meglévő üzleti folyamataihoz,szeretne egy mobilalkalmazás kifejlesztését,amiben a felhasználók jegyzeteket tudnának létrehozni,illetve a különböző napi teendőiket követni.
 Ebben a pontban a már általunk is kiegészített folyamatokat írjuk le.
 
 4.1 Cloudos bejelentkezés => Felhasználó név és jelszó beírása után bejelentkezés gombbal belépés.  
@@ -76,13 +76,13 @@ Ebben a pontban a már általunk is kiegészített folyamatokat írjuk le.
 4.14 A feladatokhoz tartozik egy checkbox,amit kipipálva jelezheti a felhasználó,hogy elvégezte a feladatot.  
 4.15 Minden feladathoz megadható egy határidő.  
 
-A megrendelő a [követlményspecifikáció](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) 4.3-as pontjában a "hamburgermenü" alkalmazását szerette volna navigálásra használni a különböző nézetek között. Mi azonban a "hamburgermenü" helyett egy "Tabbed" nézetet javaslunk. A képernyő felső részén 3 fül között lehet választani.
+A megrendelő a [követelményspecifikáció](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md#4-ig%C3%A9nyelt-%C3%BCzleti-folyamatok) 4.3-as pontjában a "hamburgermenü" alkalmazását szerette volna navigálásra használni a különböző nézetek között. Mi azonban a "hamburgermenü" helyett egy "Tabbed" nézetet javaslunk. A képernyő felső részén 3 fül között lehet választani.
 A jegyzetek,TODO lista illetve a szokások követése között. Ezáltal egy kényelmesebb felhasználói élményt hozhatunk létre.  
 
 
 
 ### 5. A rendszerre vonatkozó külső megszorítások  
-A megrendelő a [követelményspecifikációban](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md) kifejtette, a rendszerre vonatkozó külső megszorításokat.  
+A megrendelő a [követelményspecifikációban](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md#5-a-rendszerre-vonatkoz%C3%B3-szab%C3%A1lyok) kifejtette, a rendszerre vonatkozó külső megszorításokat.  
 Ezek az alábbiak:  
 
 5.1 Az alkalmazás íródjon Kotlin vagy Java programozási nyelven, de előnyben részesítjük a kotlin nyelvet.  
@@ -121,7 +121,7 @@ K08 Ne férjen hozzá a telefonon lévő többi adathoz
 <strong>Grafikus felhasználói felület</strong>: A felhasználó és a számítógép közti kommunikációt lehetővé tevő felület, amely szöveges parancsok és üzenetek helyett részben vagy teljesen grafikus elemek segítségével teszi lehetővé a vezérlést és a visszajelzést.  
 <strong>XML</strong>: eXtensible Markup Language" (bővíthető jelölő nyelv). Ez egy általános célú leíró nyelv, melynek célja elsősorban adatok, információk, és ezek struktúráinak leírása.  
 <strong>PNG</strong>: A PNG (Portable Network Graphics) képek tárolására, veszteségmentes tömörítésére alkalmas fájlformátum.  
-<strong>JPEG</strong>: A JPEG (Joint Photographic Experts Group) képek tárolására alkalmas fájlformátum.
+<strong>JPEG</strong>: A JPEG (Joint Photographic Experts Group) képek tárolására alkalmas fájlformátum.  
 <strong>Hamburgermenü</strong>: Programozók által, általában a bal sarokban lévő 3 vízszintes ikonra hivatkozik,amely egy menülistát nyit meg.  
 <strong>Checkbox</strong>: A felhasználói felületen látható kis doboz, amit a felhasználó kipipálhat (rákattintva arra) ezáltal egy bináris döntést hoz meg, jelen esetben ha ki van pipálva akkor kész a feladat, ha nincs akkor nincs kész az adott feladat.  
 
