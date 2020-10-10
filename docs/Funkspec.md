@@ -115,7 +115,9 @@ K08 Ne férjen hozzá a telefonon lévő többi adathoz
 <strong>Cornell jegyzetelési módszer</strong>: Walter Pauk által kifejlesztett, előadásokon leadott tananyag jegyzetelési és tanulási módszere, mely megkönnyíti az ismeretek rendszerezését, elsajátítását és felidézését. Egyetemi, főiskolai tanulmányok során, valamint felnőttképzésben eredményesen használható.  
 <strong>TODO lista</strong>: A tennivalók listája az időgazdálkodás és időtervezés egyik eszköze, egy felsorolás az elvégzendő teendőkről, a feladatok elvégzésének lépéseiről.  
 <strong>Habit tracker</strong>: A szokásfigyelő arra alkalmas, hogy napról-napra figyelemmel kísérjük szokásainkat.  
-
+<strong>Java</strong>: Általános célú, konkurens, osztály alapú, objektumorientált programozási nyelv. A Java programok fordítása rendszerint egy gépfüggetlen bájtkód reprezentációba történik, melynek végrehajtására a Java virtuális gépek szolgálnak.  
+<strong>Kotlin</strong>: Erősen típusos programozási nyelv, Java virtuális gépre és JavaScript kódra is lefordítható. Bár a szintaxisa nem kompatibilis a Java programnyelvvel, a Kotlin együttműködik a Java-ban írt kóddal és épít a java programkönyvtár részeire.  
+<strong>Android</strong>: Az Android egy Linux alapú operációs rendszer, amely elsősorban mobil készülékek és tabletek részére készült.  
 
 
 
