@@ -129,7 +129,12 @@ K08 Ne férjen hozzá a telefonon lévő többi adathoz
 
 Használati eset diagramm:  
 
-![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/usecase.png "usecase diagram")
+![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/usecase.png "usecase diagram")  
+
+A fent látható diagramm ábrázolja,hogy a felhasználó milyen cselekvéseket tud majd a programban végezni.
+Látható,hogy a felhasználó képes lesz regisztrálni,belépni,jegyzeteket létrehozni,szerkeszteni és törölni.Keresni is képes lesz a jegyzetek között.
+Valamint a feladatait is feltudja venni, és szerkeszteni,valamint késznek jelölni azt.Ezeken felül pedig a szokásait is képes lesz követni.
+Látható még,hogy minden cselekvés egy cloud adatbázishoz is tartozik,mivel minden cselekvéshez szükségünk lesz az adatbázis lekérdezésére,ugyanis itt lesznek tárolva az adataink.  
 
 ### 9. Képernyő tervek
 
