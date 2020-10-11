@@ -145,5 +145,11 @@ Látható még,hogy minden cselekvés egy cloud adatbázishoz is tartozik,mivel 
 Az alábbiakban leírjuk az Igényelt üzleti folyamatokban meghatározott folyamatok forgatókönyveit:  
 * Bejelentkezés: A felhasználó az Email-cím és a jelszó megadása után a LOGIN gomb megnyomásával bejelentkezik, a saját fiókjába. Ha egy felhasználó még nem rendelkezik fiókkal, akkor a "Sign up now." felíratra kattintva regisztrálni tud az alkalmazásba.  
 * Regisztráció: Egy felhasználó regisztrálni tud, ha megadja a nevét, az Email címét és megad egy jelszót. Ezek után a REGISTER gombra kattintva, a felhasználó regisztrálva lesz az alkalmazásba.  
-
+* Fülek közötti váltás: A felhasználó 3 fül közül választhat, a TODOS, NOTES és a HABITS.  
+* NOTES: A Notes-on belül a felhasználó létrehozhat egy új jegyzetet a "+" gomb segítségével. Ekkor a jegyzet szerkesztő részhez kerül.  
+* Jegyzet mentése: A Jegyzeteket a "SAVE NOTE" gomb megnyomásával tudja menteni. Egy másik eset, ha a felhasználó a vissza gombra nyom, az alkalmazás felkinálja neki, a jegyzet mentésének lehetőségét.  
+* Jegyzet törlése: A mentett jegyzeteket a NOTES fülön láthatja a felhasználó, minden jegyzetnek van egy törés gombja, ami az "X". A gomb lenyomásával, és a törlés megerősítésével lehet törölni egy jegyzetet.  
+* Rendezés: A jegyzeteket rendezni lehet "abc" szerint növekvő és csökkenő sorrendben, továbbá a létrehozási dátum alapján, az alkamazás tetején lévő rendező gombokkal.  
+* Keresés: A keresés gombra kattintva, a felhasználó a jegyzetek között tud keresni title, labels és a jegyzet szövege alapján. Az összes jegyzet között görgetéssel lehet keresni.  
+* HABITS: Itt tekintheti meg a felhasználó a program használattal kapcsolatos szokásait.
 
