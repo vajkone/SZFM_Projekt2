@@ -151,5 +151,7 @@ Az alábbiakban leírjuk az Igényelt üzleti folyamatokban meghatározott folya
 * Jegyzet törlése: A mentett jegyzeteket a NOTES fülön láthatja a felhasználó, minden jegyzetnek van egy törés gombja, ami az "X". A gomb lenyomásával, és a törlés megerősítésével lehet törölni egy jegyzetet.  
 * Rendezés: A jegyzeteket rendezni lehet "abc" szerint növekvő és csökkenő sorrendben, továbbá a létrehozási dátum alapján, az alkamazás tetején lévő rendező gombokkal.  
 * Keresés: A keresés gombra kattintva, a felhasználó a jegyzetek között tud keresni title, labels és a jegyzet szövege alapján. Az összes jegyzet között görgetéssel lehet keresni.  
-* HABITS: Itt tekintheti meg a felhasználó a program használattal kapcsolatos szokásait.
+* HABITS: Itt tekintheti meg a felhasználó a program használattal kapcsolatos szokásait.  
+* TODOS: A felhasználó sorba felveheti a teendőit, és figyelemmel követheti, hogy hogy halad velük.  
+* Feladat: Egy feladatban a felhasználó felveheti magát a feladatot, hogy mikor kell elvégezni, és mit kell elvégezni. Ha egy feladat elkészült, a felhasználó kijelölheti készként.   
 
