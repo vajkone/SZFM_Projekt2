@@ -1,0 +1,2 @@
+Rendszerterv a jegyzetelő alkalmazáshoz
+---------------------------------------
