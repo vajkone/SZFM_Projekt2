@@ -23,8 +23,21 @@ A szoftver rendszernek támogatnia kell az alábbi tevékenységeket:
 * rendszeres biztonsági mentés  
 * általános átvizsgálás során észlelt hibák javítása  
 * bejelentések során érkezett hibák javítása  
-* felhasználók igényeinek folyamatos figyelése és felmérése
+* felhasználók igényeinek folyamatos figyelése és felmérése  
+* Módosítások hatásának figyelése, elemzése  
 * biztonsági beállítások folyamatos felülvizsgálata és szükség esetén korrigálásuk.  
+
+Rögzítendő eljárások:  
+
+* Hibajelentések, hibanaplók  
+* Karbantartás tervezése, megvalósítása, ellenőrzése  
+* Engedélyezés és jóváhagyás módja  
+* Karbantartási feljesztések  
+
+Karbantartáshoz kötödő feladatok:
+* Módosítás esetén: Hatáselemzés
+* Hibakezelés esetén: Debbugolás, hibajavítás
+* Mindkettő esetén: Regressziós tesztelés
 
 ### 12. Telepítési terv  
 Az alábbi pontban az aplikáció telepítésének menete van leírva.
