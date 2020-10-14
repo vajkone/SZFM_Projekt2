@@ -12,4 +12,7 @@ a felhasználó a kezdő képernyőn képes lesz belépni,ha már van fiókja,ha
 Itt a jegyzetek között görgetéssel vagy különböző paraméterek segítségével kereshet is. Egy "+" gombbal új jegyzetet vehet fel. Egy "X" gombbal pedig törölni tudja az adott jegyzetet.  
 Ha pedig már meglévő jegyzetet szeretne szerkeszteni,akkor egy egyszerű kattintással a jegyzetre,majd egy "Edit note" gombra kattintva a szerkesztő felületre kerülhet.
 Ezután ha a teendőit szeretné látni a felhasználó,akkor egy egyszerű lapozással megteheti azt,mivel a felhasználói felület egy úgynevezett Tabbed activity, amin három féle lap lesz található. 
-A teendős felületen ismét csak görgetéssel tud keresni.Ugyancsak egy gombnyomással hozzá adhat a felhasználó egy teendőt. És szerkeszteni is képes lesz mint a jegyzeteit. Valamint minden teendőhöz tartozik egy checkbox,amit kipipálva jelezheti,hogy elkészül az adott feladattal. Ezen a "fülön" ha tovább lapoz egyet a felhasználó,akkor pedig a szokásait tudja nyomon követni.
+A teendős felületen ismét csak görgetéssel tud keresni.Ugyancsak egy gombnyomással hozzá adhat a felhasználó egy teendőt. És szerkeszteni is képes lesz mint a jegyzeteit. Valamint minden teendőhöz tartozik egy checkbox,amit kipipálva jelezheti,hogy elkészül az adott feladattal. Ezen a "fülön" ha tovább lapoz egyet a felhasználó,akkor pedig a szokásait tudja nyomon követni.  
+
+### 12. Telepítési terv
+Az alábbi pontban az aplikáció telepítésének menete van leírva.
