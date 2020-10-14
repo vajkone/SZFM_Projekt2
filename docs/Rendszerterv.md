@@ -19,7 +19,6 @@ Az alábbi pontban az aplikáció telepítésének menete van leírva.
 
 Az alkalmazást, egy .apk kiterjesztésű telepítő fájllal lehet telepíteni egy android operációs rendszerű eszközre. 
 Az alkalmazás android rendszerű telefonra és tabletre lett fejleszte, más android opercációs rendszerű eszközökön nem biztosított az alkalmazás megfelelő működése.
-Emelett megszabás még, hogy az adott androidos eszköznek 5.0 vagy annál nagyobb verziószámú android operációs rendszerszerrel kell rendelkeznie.
-
+Emelett megszabás még, hogy az adott androidos eszköznek 5.0 vagy annál nagyobb verziószámú android operációs rendszerszerrel kell rendelkeznie
 Az alkalmazás telepíse előtt, még engedélyeznünk kell az adott eszközön, az ismeretlen forrásból származó alkalmazások telepitését.
 Az engedély megadásának módja eszközönként eltérhet.
