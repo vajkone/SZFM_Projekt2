@@ -21,7 +21,10 @@ A szoftver rendszernek támogatnia kell az alábbi tevékenységeket:
 * általános átvizsgálás során észlelt hibák javítása  
 * meghibásodás esetén az utolsó konzisztens állapot visszaállítása  
 * rendszeres biztonsági mentés  
-* általános átvizsgálás során észlelt hibák javítása
+* általános átvizsgálás során észlelt hibák javítása  
+* bejelentések során érkezett hibák javítása  
+* felhasználók igényeinek folyamatos figyelése és felmérése
+* biztonsági beállítások folyamatos felülvizsgálata és szükség esetén korrigálásuk.  
 
 ### 12. Telepítési terv  
 Az alábbi pontban az aplikáció telepítésének menete van leírva.
