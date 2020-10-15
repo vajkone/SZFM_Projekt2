@@ -98,6 +98,12 @@ akkor a kontroller fogja kitörölni az adott rekordot a táblából.
 Tehát a felhasználó használja a kontrollert,a kontroller módosítja a modellt,a modell frissíti a nézetet amit majd a felhasználó látni fog.  
 A modell réteget kell változtatnunk,ha bármilyen változást szeretnénk majd a későbbiekben végrehajtani az adatbázisunk struktúráján.  
 A programunk úgy került kialakításra,hogy ez az esetleges változás a többi réteget ne érintse.  
+Az MVC tervezési minta sok előnnyel rendelkezik,ezekért is került a választásunk erre a mintára.  
+Egyidejűleg lehet fejleszteni,tehát többen tudunk egyszerre dolgozni a komponenseken.  
+Az elemek alapvetően nagy részben függetlenek egymástól,ezért könnyen változtathatóak.  
+Könnyen bővíthető is,mivel a felelősségek szét vannak osztva a komponensek között.  
+Az alkalmazásunk online alkalmazás lesz. Cloudos rendszerrel lesz megoldva az adatok illetve a felhasználók tárolása.  
+Így a felhasználók különböző eszközökről is el tudják érni a jegyzeteiket,illetve feladataikat.
 
 
 ### 7. Tesztterv  
