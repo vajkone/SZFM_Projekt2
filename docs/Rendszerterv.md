@@ -135,7 +135,32 @@ Rögzítendő eljárások:
 Karbantartáshoz kötödő feladatok:
 * Módosítás esetén: Hatáselemzés
 * Hibakezelés esetén: Debbugolás, hibajavítás
-* Mindkettő esetén: Regressziós tesztelés  
+* Mindkettő esetén: Regressziós tesztelés
+
+### 10. Adatbázis terv 
+
+Az adatbázis felhő alapú lesz, amihez a Google Firestore felhő szolgáltatását választottuk. A Firestore NoSQL alapú, táblák helyett úgynevezett dokumentumokkal és kollekciókkal
+dolgozik. Az adatok egy-egy kollekción belül JSON sémát követve kerülnek elmentésre, field-value párokban. A felhasználók adatai is mentésre kerülnek, tovább minden regisztrált
+felhasználó automatikusan generált globálisan Unique Id-t kap, ami szükséges lesz a későbbiekben, ugyanis az appon belül mentett dokumentumai ehhez az Id-hoz lesznek
+hozzárendelve.
+
+#### User database pattern
+  ![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/UserDb.png "User database")  
+  
+A mentett adatok számára fentartott adatbázisban egy Users szuperkollekcióba kerül az összes felhasználó Id-ja, amikhez további 3 kollekció, a Notes, Todos és Habits
+alkollekciók lesznek rendelve:
+
+#### Saved data pattern
+  ![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/DocsAndCollections.png "Saved data")  
+
+Végül minden alkollekcióba, a megfelelő helyükre, auto Id-val mentésre kerülnek a dokumentumok a bennük található adatokkal field-value párban.
+
+#### Saved fields and values
+   ![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/NoteDb2.png "Saved field and values")  
+
+
+
+
 
 ### 11. Funckionális terv
 
