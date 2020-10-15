@@ -51,6 +51,19 @@ A fentebb látható képen láthatjuk a tervezett belépő,regisztráló illetve
 
 Ezeken a képeken látható a jegyzetek közötti keresés megvalósítása. Valamint a jegyzeteket rendezheti is majd a felhasználó. Az utolsó képen pedig a jegyzetek szerkesztői felülete látható,ami a Cornell jegyzetelési technikát valósítja meg.
 
+![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/habittracking.png "habittracking")
+
+A HABITS "fülön" egy ehhez hasonló felület fogadja majd a felhasználót,ahonnan a különböző szokásait tudja  leolvasni.
+
+<p float="left">
+  <img src="https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/TodoList1.png" width="300" />
+  <img src="https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/TodoList2.png" width="300" /> 
+  
+</p>
+
+A feladatok listája pedig egy ehhez hasonló felületen fog megjelenni.Minden feladata a felhasználónak ki lesz listázva. Minden feladathoz tartozik egy checkbox,amit a felhasználó kipipálhat,így jelezve azt,hogy már teljesítette a feladatot. Ugyancsak a "+" gombbal tud a felhasználó új feladatot létrehozni,a meglévők mellé.Ez a "+" gomb pedig a második képen látható szerkesztő felületre fog váltani. Itt pedig megadhatja a felhasználó a feladatot,valamint azt,hogy mennyire sűrgős aza adott feladat. Majd egy gombbal elmentheti ezt.
+
+
 
 
 
