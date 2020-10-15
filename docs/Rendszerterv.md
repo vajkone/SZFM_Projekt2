@@ -35,36 +35,6 @@ módosíthatóak, csak véglegesen eltávolíthatóak.
  5-7 napra visszamenőleg és a napok alatt pipa vagy x fog megjelenni. Természetesen a cél az, hogy a kialakítani kivánt szokások sorában csupa pipa legyen és egy ilyen felület, 
  amit becsületesen vezetve segíthet a felhasználónak áttekinteni, hogy mit is végzett el melyik napon, hozzájárul ahhoz, hogy a felhasználó jobban odafigyeljen napi szinten az
  apró szokásaira.
- 
- 
-### 2. Projekt terv:
-
-  A rendszer létrehozásához rendelkezésre álló emberi erőforrások alapján a projekt a rendszerterv elfogadását követő öt héten belül
-megvalósítható. A projektben az alábbi szerepkörök betöltése szükséges:
-
-* Projektvezető: Aktívan részt vesz a fejlesztésben, a többi fejlesztő munkáját átlátja és koordinálja
-* Designtervező: Megrendelői igények alapján előzetes képernyőterv készítése, egyeztetés a megrendelővel a
-		végső designtervet illetően, a tényleges projekt design-jának megvalósítása
-* Adatbázistervező: A projekthez tartozó teljes adatbázis létrehozásáért és megfelelő működéséért,
-		   valamint a programozó által igényelt lekérdezések megvalósításáért felelős. 
-* Programozó: A projektvezető által kijelölt programozási feladatok megoldásáért felelős  
-
-##### Ütemterv
-   | Fő feladatok     |Részfeladat| Prioritás     |Becslés|Eltelt idő|Hátralévő idő  |
-   | -----------------|----------|:-------------:| -----|---------|-----------|
-   | Cloud |Cloud rendszer integrálása a projektbe| Magas | 10-12 óra |          |  12 óra          |
-   | Cloud |Felhasználó authentikáció| Magas | 14-16 óra |          |  16 óra          |
-   | Cloud-Adatbázis |Adatbázis létrehozása| Magas | 14-16 óra |          |  16 óra          |
-   | Cloud-Adatbázis |CRUD funkcionalitás implementálása| Magas | 16-18 óra |          |  18 óra          |
-   | Cloud-Adatbázis          |Specifikus lekérdező funkciók           |Magas       |   14-16 óra |          |    16 óra        |
-   | Programozói feladatok |Modell osztályok létrehozása| Közepes | 6-8 óra |          |  8 óra          |
-   | Programozói feladatok |Egyéb részfeladatok| Közepes | 6-8 óra |          |  8 óra          |
-   | UI     |  UI létrehozása         |  Közepes     | 6-8 óra     |          |   8 óra         |
-   | UI     |  Controller osztályok       |  Magas     | 8-10 óra     |          |   10 óra         |
-   | UI     |  UI elemek funkcionalitása        |  Magas     | 4-6 óra     |          |   6 óra         |
-   | UI     |  Reszponzív design       |  Alacsony     | 13-14 óra     |          |   14 óra         |
-   | Tesztelés     |  Tesztelés       |  Magas     | 12-14 óra     |          |   14 óra         |
-   | Kényelmi funkciók     |  Létrehozás és tesztelés       |  Alacsony     | 16-18 óra     |          |   18 óra         |
 
 
 ### 3. Üzleti folyamatok
@@ -78,6 +48,18 @@ Itt a jegyzetek között görgetéssel vagy különböző paraméterek segítsé
 Ha pedig már meglévő jegyzetet szeretne szerkeszteni,akkor egy egyszerű kattintással a jegyzetre,majd egy "Edit note" gombra kattintva a szerkesztő felületre kerülhet.
 Ezután ha a teendőit szeretné látni a felhasználó,akkor egy egyszerű lapozással megteheti azt,mivel a felhasználói felület egy úgynevezett Tabbed activity, amin három féle lap lesz található. 
 A teendős felületen ismét csak görgetéssel tud keresni.Ugyancsak egy gombnyomással hozzá adhat a felhasználó egy teendőt. És szerkeszteni is képes lesz mint a jegyzeteit. Valamint minden teendőhöz tartozik egy checkbox,amit kipipálva jelezheti,hogy elkészül az adott feladattal. Ezen a "fülön" ha tovább lapoz egyet a felhasználó,akkor pedig a szokásait tudja nyomon követni.  
+
+### 6. Architekturális terv
+
+![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/MVC.png "MVC")
+
+Az alkalmazás az MVC architektúrális tervezési mintát követi.  
+Eszerint a programunkat 3 részre osztjuk,a modellre,nézetre, és kontrollerre.  
+A modell része foglalkozik a programunk során keletkező adatok,és a köztük lévő kapcsolatok kezelésével.  
+Ide értjük a táblázatot,amiben a jegyzeteket kezeljük.  
+A nézet vagy angolul view,része a programunknak,a megjelenítéssel foglalkozik.  
+Ez fogja megjeleníteni a modellben kezelt adatokat.  
+
 
 ### 7. Tesztterv  
 
