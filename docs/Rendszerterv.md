@@ -44,7 +44,14 @@ Karbantartáshoz kötödő feladatok:
 Ez az alkalmazás a diákok jegyzetelését és időbeosztását szeretné segíteni.A felhasználó képes lesz jegyzeteket létrehozni,törölni,szerkeszteni. Valamint a napi teendőit is felviheti a rendszerbe,és a különböző szokásait is nyomon követheti.  
 
 ![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/designplan1.png "designplan1")  
-A fentebb látható képen láthatjuk a tervezett belépő,regisztráló illetve alapértelmezett képernyők terveit. Az első képen a már regisztrált felhasználó tud belépni,miután megadta a felhasználónevét illetve jelszavát, a login gomb segítségével. Valamint ha még nincs fiókja akkor rákattintva a Sign up gombra a második képre kerül át. Ahol pedig egy név,email,jelszó hármassal regisztrálhat a rendszerbe.A bejelentkezés után pedig az alapértelmezett képernyőre kerül,ami a jegyzetelő felület. Itt láthatja kilistázva a jegyzeteit(ha vannak).A jegyzetek között görgetéssel,vagy a nagyító segítségével kereshet. A "+" gombbal tud létrehozni jegyzetet. Minden jegyzetnél található egy piros "X" gomba,melynek segítségével törölni tudja a jegyzetet. Ha pedig szerkeszteni szeretné a jegyzetet akkor csak rá kell kattintania a jegyzetre,ami átvált a szerkesztő felületre.Látható a képen,hogy az oldalnak 3 "füle" van,ezek között elhúzással tud váltani a felhasználó.
+
+A fentebb látható képen láthatjuk a tervezett belépő,regisztráló illetve alapértelmezett képernyők terveit. Az első képen a már regisztrált felhasználó tud belépni,miután megadta a felhasználónevét illetve jelszavát, a login gomb segítségével. Valamint ha még nincs fiókja akkor rákattintva a Sign up gombra a második képre kerül át. Ahol pedig egy név,email,jelszó hármassal regisztrálhat a rendszerbe.A bejelentkezés után pedig az alapértelmezett képernyőre kerül,ami a jegyzetelő felület. Itt láthatja kilistázva a jegyzeteit(ha vannak).A jegyzetek között görgetéssel,vagy a nagyító segítségével kereshet. A "+" gombbal tud létrehozni jegyzetet. Minden jegyzetnél található egy piros "X" gomba,melynek segítségével törölni tudja a jegyzetet. Ha pedig szerkeszteni szeretné a jegyzetet akkor csak rá kell kattintania a jegyzetre,ami átvált a szerkesztő felületre.Látható a képen,hogy az oldalnak 3 "füle" van,ezek között elhúzással tud váltani a felhasználó.  
+
+![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/designplan2.png "designplan2")  
+
+Ezeken a képeken látható a jegyzetek közötti keresés megvalósítása. Valamint a jegyzeteket rendezheti is majd a felhasználó. Az utolsó képen pedig a jegyzetek szerkesztői felülete látható,ami a Cornell jegyzetelési technikát valósítja meg.
+
+
 
 
 ### 12. Telepítési terv  
