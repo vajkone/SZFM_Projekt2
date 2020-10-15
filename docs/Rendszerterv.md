@@ -7,12 +7,16 @@ Rendszerterv a jegyzetelő alkalmazáshoz
 ![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/BPMNF.png "BPMN diagramm")
 
 Ezzel a programmal,a diákoknak próbálunk segítséget nyújtani. Ezzel a programmal képesek lesznek jegyzeteket létrehozni,a különböző napi teendőiket nyomon követni,
-illetve a szokásaikat is megfigyelhetik. Mindezt egy Cloud alapú könnyen kezelhető felhasználói felületen.Ahogy a fent látható folyamat ábrán is látszik
-a felhasználó a kezdő képernyőn képes lesz belépni,ha már van fiókja,ha pedig nincs akkor regisztálhat. Ha belépett akkor elsősorban a jegyzeteit fogja látni.
-Itt a jegyzetek között görgetéssel vagy különböző paraméterek segítségével kereshet is. Egy "+" gombbal új jegyzetet vehet fel. Egy "X" gombbal pedig törölni tudja az adott jegyzetet.  
+illetve a szokásaikat is megfigyelhetik. Mindezt egy Cloud alapú könnyen kezelhető felhasználói felületen.
+Ahogy a fent látható folyamat ábrán is látszika felhasználó a kezdő képernyőn képes lesz belépni,ha már van fiókja,ha pedig nincs akkor regisztálhat. 
+Ha belépett akkor elsősorban a jegyzeteit fogja látni.
+Itt a jegyzetek között görgetéssel vagy különböző paraméterek segítségével kereshet is. 
+Egy "+" gombbal új jegyzetet vehet fel. Egy "X" gombbal pedig törölni tudja az adott jegyzetet.  
 Ha pedig már meglévő jegyzetet szeretne szerkeszteni,akkor egy egyszerű kattintással a jegyzetre,majd egy "Edit note" gombra kattintva a szerkesztő felületre kerülhet.
 Ezután ha a teendőit szeretné látni a felhasználó,akkor egy egyszerű lapozással megteheti azt,mivel a felhasználói felület egy úgynevezett Tabbed activity, amin három féle lap lesz található. 
-A teendős felületen ismét csak görgetéssel tud keresni.Ugyancsak egy gombnyomással hozzá adhat a felhasználó egy teendőt. És szerkeszteni is képes lesz mint a jegyzeteit. Valamint minden teendőhöz tartozik egy checkbox,amit kipipálva jelezheti,hogy elkészül az adott feladattal. Ezen a "fülön" ha tovább lapoz egyet a felhasználó,akkor pedig a szokásait tudja nyomon követni.  
+A teendős felületen ismét csak görgetéssel tud keresni.Ugyancsak egy gombnyomással hozzá adhat a felhasználó egy teendőt. 
+És szerkeszteni is képes lesz mint a jegyzeteit. Valamint minden teendőhöz tartozik egy checkbox,amit kipipálva jelezheti,hogy elkészül az adott feladattal. 
+Ezen a "fülön" ha tovább lapoz egyet a felhasználó,akkor pedig a szokásait tudja nyomon követni.  
 
 ### 8. Karbantartási terv  
 A szoftver rendszernek támogatnia kell az alábbi tevékenységeket:  
@@ -41,11 +45,18 @@ Karbantartáshoz kötödő feladatok:
 
 ### 11. Funckionális terv
 
-Ez az alkalmazás a diákok jegyzetelését és időbeosztását szeretné segíteni.A felhasználó képes lesz jegyzeteket létrehozni,törölni,szerkeszteni. Valamint a napi teendőit is felviheti a rendszerbe,és a különböző szokásait is nyomon követheti.  
+Ez az alkalmazás a diákok jegyzetelését és időbeosztását szeretné segíteni.
+A felhasználó képes lesz jegyzeteket létrehozni,törölni,szerkeszteni. Valamint a napi teendőit is felviheti a rendszerbe,és a különböző szokásait is nyomon követheti.  
 
 ![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/designplan1.png "designplan1")  
 
-A fentebb látható képen láthatjuk a tervezett belépő,regisztráló illetve alapértelmezett képernyők terveit. Az első képen a már regisztrált felhasználó tud belépni,miután megadta a felhasználónevét illetve jelszavát, a login gomb segítségével. Valamint ha még nincs fiókja akkor rákattintva a Sign up gombra a második képre kerül át. Ahol pedig egy név,email,jelszó hármassal regisztrálhat a rendszerbe.A bejelentkezés után pedig az alapértelmezett képernyőre kerül,ami a jegyzetelő felület. Itt láthatja kilistázva a jegyzeteit(ha vannak).A jegyzetek között görgetéssel,vagy a nagyító segítségével kereshet. A "+" gombbal tud létrehozni jegyzetet. Minden jegyzetnél található egy piros "X" gomba,melynek segítségével törölni tudja a jegyzetet. Ha pedig szerkeszteni szeretné a jegyzetet akkor csak rá kell kattintania a jegyzetre,ami átvált a szerkesztő felületre.Látható a képen,hogy az oldalnak 3 "füle" van,ezek között elhúzással tud váltani a felhasználó.  
+A fentebb látható képen láthatjuk a tervezett belépő,regisztráló illetve alapértelmezett képernyők terveit. 
+Az első képen a már regisztrált felhasználó tud belépni,miután megadta a felhasználónevét illetve jelszavát, a login gomb segítségével. Valamint ha még nincs fiókja akkor rákattintva a Sign up gombra a második képre kerül át. 
+Ahol pedig egy név,email,jelszó hármassal regisztrálhat a rendszerbe.A bejelentkezés után pedig az alapértelmezett képernyőre kerül,ami a jegyzetelő felület. 
+Itt láthatja kilistázva a jegyzeteit(ha vannak).A jegyzetek között görgetéssel,vagy a nagyító segítségével kereshet. 
+A "+" gombbal tud létrehozni jegyzetet. Minden jegyzetnél található egy piros "X" gomba,melynek segítségével törölni tudja a jegyzetet. 
+Ha pedig szerkeszteni szeretné a jegyzetet akkor csak rá kell kattintania a jegyzetre,ami átvált a szerkesztő felületre.
+Látható a képen,hogy az oldalnak 3 "füle" van,ezek között elhúzással tud váltani a felhasználó.  
 
 ![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/designplan2.png "designplan2")  
 
@@ -61,7 +72,9 @@ A HABITS "fülön" egy ehhez hasonló felület fogadja majd a felhasználót,aho
   
 </p>
 
-A feladatok listája pedig egy ehhez hasonló felületen fog megjelenni.Minden feladata a felhasználónak ki lesz listázva. Minden feladathoz tartozik egy checkbox,amit a felhasználó kipipálhat,így jelezve azt,hogy már teljesítette a feladatot. Ugyancsak a "+" gombbal tud a felhasználó új feladatot létrehozni,a meglévők mellé.Ez a "+" gomb pedig a második képen látható szerkesztő felületre fog váltani. Itt pedig megadhatja a felhasználó a feladatot,valamint azt,hogy mennyire sűrgős aza adott feladat. Majd egy gombbal elmentheti ezt.
+A feladatok listája pedig egy ehhez hasonló felületen fog megjelenni.Minden feladata a felhasználónak ki lesz listázva. 
+Minden feladathoz tartozik egy checkbox,amit a felhasználó kipipálhat,így jelezve azt,hogy már teljesítette a feladatot. Ugyancsak a "+" gombbal tud a felhasználó új feladatot létrehozni,a meglévők mellé.
+Ez a "+" gomb pedig a második képen látható szerkesztő felületre fog váltani. Itt pedig megadhatja a felhasználó a feladatot,valamint azt,hogy mennyire sűrgős aza adott feladat. Majd egy gombbal elmentheti ezt.
 
 
 
