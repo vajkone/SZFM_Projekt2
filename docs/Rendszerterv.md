@@ -37,7 +37,15 @@ Rögzítendő eljárások:
 Karbantartáshoz kötödő feladatok:
 * Módosítás esetén: Hatáselemzés
 * Hibakezelés esetén: Debbugolás, hibajavítás
-* Mindkettő esetén: Regressziós tesztelés
+* Mindkettő esetén: Regressziós tesztelés  
+
+### 11. Funckionális terv
+
+Ez az alkalmazás a diákok jegyzetelését és időbeosztását szeretné segíteni.A felhasználó képes lesz jegyzeteket létrehozni,törölni,szerkeszteni. Valamint a napi teendőit is felviheti a rendszerbe,és a különböző szokásait is nyomon követheti.  
+
+![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/designplan1.png "designplan1")  
+A fentebb látható képen láthatjuk a tervezett belépő,regisztráló illetve alapértelmezett képernyők terveit. Az első képen a már regisztrált felhasználó tud belépni,miután megadta a felhasználónevét illetve jelszavát, a login gomb segítségével. Valamint ha még nincs fiókja akkor rákattintva a Sign up gombra a második képre kerül át. Ahol pedig egy név,email,jelszó hármassal regisztrálhat a rendszerbe.
+
 
 ### 12. Telepítési terv  
 Az alábbi pontban az aplikáció telepítésének menete van leírva.
