@@ -1,39 +1,5 @@
 Rendszerterv a jegyzetelő alkalmazáshoz
 ---------------------------------------
-### 1. A rendszer célja:
-
-   A rendszer célja hogy diákoknak egy olyan felületet biztosítson hordozható elektronikus eszközeiken (okostelefon ill. tablet)
-amelyet használva könnyen tudnak óráikon valamint előadásaikon jegyzetelni, elvégzendő feladataikat proiritási sorrendben számontartani (TODO List), valamint szokásaikat
-ütemezni és nyilvántartani. Ez a három tevékenység együtt nagyban garantálja, hogy az alkalmazást használó diák produktivitási szintje megnő, ami hozzájárul akadémiai sikerihez,
-valamint későbbiekben a munka világában is kamatoznak majd a kialakított jó szokások. Az alkalmazás adatbázisa teljesen felhő alapú, így a diák több eszközről is hozzáfér
-a saját fiókján felvitt összes adathoz, legyen az jegyzet, elvégzendő feladatok vagy saját jó szokásainak számontartása.
-
-* **Note taking**
-
-   A rendszer jegyzetelő része a világhírű Cornell metódust ültetné át
-elektronikus környezetbe, ami már egyfajta útmutatást ad a diákoknak egy már bizonyítottan helyes és működő jegyzetelési stratégiához.
-Továbbá a diákoknak minden jegyzete egy helyen lenne, a rendszer lehetőség biztosít a jegyzetek hatékony csoportosításához, azok 
-átlátható rendszerezéséhez, valamint könnyű előkereséséhez. Ez utóbbit kulcsszavak szerinti, időpontbéli vagy esetleg tantárgy szerint
-kereséssel valósítaná meg az alkalmazás, így jelentős számú és akár rendezetlen jegyzetek esetén is, a diák könnyedén, gyorsan és hatékonyan
-rátalálhat a keresett jegyzetre, ha mondjuk emlékszik 1-2 szóra a jegyzetből vagy hogy körülbelül mikor készült a jegyzet. 
-Ugyan a rendszernek nem kifejezett célja, hogy jegyzetelési tanácsadóként szolgáljon diákok számára, a környezet valamelyest rákényszeríti a
-diákokat hogy egy helyes módszert használjanak és mivel az meglehetősen intuitív, ezért külön magyarázatot nem is igényel, a diákoknak nem
-kell hosszas magyarázatokat végighallgatniuk hogy ráérezzenek a módszer nyújtotta előnyökre.  
-
-* **Todo list**
-
-  A rendszer Todo listájának célja egy egyszerű felület biztosítása, amelyben a felhasználó felveheti az összes feladatát egy helyen, listába rendezve, prioritást és határidőt
-rendelve az adott feladathoz, ezzel biztosítva, hogy nem feledkezik meg az elvégzendő feladatokról. A rendszer opcionálisan emlékeztetőt küldhet a felhasználó számára
-időközönként vagy a határidő előtt egy bizonyos időintervallumban. Az elvégzett feladatok egy külön tárolóba kerülnek (archívum), ahol továbbra is áttekinthetőek, de már nem 
-módosíthatóak, csak véglegesen eltávolíthatóak.  
-
-* **Habit tracking**
-
-   A rendszer Habit tracking részének a célja egy olyan felület biztosítása a felhasználó számára, amelyre elvégezni kívánt szokásait felveheti, majd naponta, annak függvényében,
- hogy aznap elvégezte-e az adott szokást vagy nem, pipát vagy x-et rak a szoksához. Ily módon a felületre tekintve a teljesíteni kívánt szokásait listába renddezve fogja látni 
- 5-7 napra visszamenőleg és a napok alatt pipa vagy x fog megjelenni. Természetesen a cél az, hogy a kialakítani kivánt szokások sorában csupa pipa legyen és egy ilyen felület, 
- amit becsületesen vezetve segíthet a felhasználónak áttekinteni, hogy mit is végzett el melyik napon, hozzájárul ahhoz, hogy a felhasználó jobban odafigyeljen napi szinten az
- apró szokásaira.
 
 
 ### 3. Üzleti folyamatok
@@ -47,6 +13,18 @@ Itt a jegyzetek között görgetéssel vagy különböző paraméterek segítsé
 Ha pedig már meglévő jegyzetet szeretne szerkeszteni,akkor egy egyszerű kattintással a jegyzetre,majd egy "Edit note" gombra kattintva a szerkesztő felületre kerülhet.
 Ezután ha a teendőit szeretné látni a felhasználó,akkor egy egyszerű lapozással megteheti azt,mivel a felhasználói felület egy úgynevezett Tabbed activity, amin három féle lap lesz található. 
 A teendős felületen ismét csak görgetéssel tud keresni.Ugyancsak egy gombnyomással hozzá adhat a felhasználó egy teendőt. És szerkeszteni is képes lesz mint a jegyzeteit. Valamint minden teendőhöz tartozik egy checkbox,amit kipipálva jelezheti,hogy elkészül az adott feladattal. Ezen a "fülön" ha tovább lapoz egyet a felhasználó,akkor pedig a szokásait tudja nyomon követni.  
+
+### 7. Tesztterv  
+
+A teszttervet, azért alkotjuk meg, hogy az aplikáció kiadása tökéletes legyen, és a felhasználó egy teljesen hibátlan programot kapjon. 
+A tesztelés feladata az, hogy a szoftver használata során fellépő hibák előfordulását csökkentse, a szoftver megbízhatóságát növelje és a szabványoknak, előírásoknak való megfelelőségét biztosítsa. 
+A teszt végrehajtásáért a projekt menedzser felel és a tesztcsapat hajtja végre  
+
+Elvárások a teszteléssel kapcsolatban:
+
+* A tesztprogram az ebben a dokumentumban meghatározott tesztterv alapján fut.  
+* Az this.BestTeam=true projektcsapat felelős a tesztadatok előállításáért.  
+* Az olvasó ismeri az alapdokumentumokat, amelyek meghatározzák a rendszert.
 
 ### 8. Karbantartási terv  
 A szoftver rendszernek támogatnia kell az alábbi tevékenységeket:  
