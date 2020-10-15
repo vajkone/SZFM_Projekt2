@@ -82,6 +82,10 @@ Ha pedig már meglévő jegyzetet szeretne szerkeszteni,akkor egy egyszerű katt
 Ezután ha a teendőit szeretné látni a felhasználó,akkor egy egyszerű lapozással megteheti azt,mivel a felhasználói felület egy úgynevezett Tabbed activity, amin három féle lap lesz található. 
 A teendős felületen ismét csak görgetéssel tud keresni.Ugyancsak egy gombnyomással hozzá adhat a felhasználó egy teendőt. És szerkeszteni is képes lesz mint a jegyzeteit. Valamint minden teendőhöz tartozik egy checkbox,amit kipipálva jelezheti,hogy elkészül az adott feladattal. Ezen a "fülön" ha tovább lapoz egyet a felhasználó,akkor pedig a szokásait tudja nyomon követni.  
 
+### 5. Fizikai környezet
+Az általunk elgondolt applikáció az Android Studio fejlesztői környezetben fog készülni. Android operációs rendszert futtató mobiltelefonokon, illetve tableteken lesz elérhető. Minimum 5.0.0 verziójú vagy annál magasabb Android operációs rendszeren lesz használható, a közeljövőben más mobil operációs rendszeren nem lesz elérhető.  
+Ahogy a megrendelői [követelményspecifikációban](https://github.com/vajkone/SZFM_Projekt2/blob/main/docs/K%C3%B6vspec.md#5-a-rendszerre-vonatkoz%C3%B3-szab%C3%A1lyok) is olvasható, a megrendelőnk kérése az volt, hogy az applikáció Java vagy Kotlin programozási nyelven íródjon. Csapatunk a Kotlin mellett döntött, ugyanis a Kotlin az Android hivatalos nyelve, óriási fejlesztői közösség épül köré és sokkal több frissítés érhető el az Androidra Kotlinon keresztül.  
+
 ### 6. Architekturális terv
 
 ![alt text](https://github.com/vajkone/SZFM_Projekt2/blob/main/K%C3%A9pek/MVC.png "MVC")
