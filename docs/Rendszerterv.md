@@ -92,6 +92,12 @@ A modell része foglalkozik a programunk során keletkező adatok,és a köztük
 Ide értjük a táblázatot,amiben a jegyzeteket kezeljük.  
 A nézet vagy angolul view,része a programunknak,a megjelenítéssel foglalkozik.  
 Ez fogja megjeleníteni a modellben kezelt adatokat.  
+A kontroller része a programnak a felhasználótól származó műveleteket fogja kezelni.  
+A felhasználó által adott parancsokat fogja a modellben létrehozni. Például ha a felhasználó kitöröl egy jegyzetet,
+akkor a kontroller fogja kitörölni az adott rekordot a táblából.  
+Tehát a felhasználó használja a kontrollert,a kontroller módosítja a modellt,a modell frissíti a nézetet amit majd a felhasználó látni fog.  
+A modell réteget kell változtatnunk,ha bármilyen változást szeretnénk majd a későbbiekben végrehajtani az adatbázisunk struktúráján.  
+A programunk úgy került kialakításra,hogy ez az esetleges változás a többi réteget ne érintse.  
 
 
 ### 7. Tesztterv  
