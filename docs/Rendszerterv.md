@@ -122,7 +122,17 @@ Elvárások a teszteléssel kapcsolatban:
 
 * A tesztprogram az ebben a dokumentumban meghatározott tesztterv alapján fut.  
 * Az this.BestTeam=true projektcsapat felelős a tesztadatok előállításáért.  
-* Az olvasó ismeri az alapdokumentumokat, amelyek meghatározzák a rendszert.
+* Az olvasó ismeri az alapdokumentumokat, amelyek meghatározzák a rendszert.  
+
+A teszt elvégzéséhez, erőforrások szükségesek.  
+Szükséges erőforrások:  
+- klimatizált helyiség, ahol a jelenlegi szabályozásoknak megfelelően, a tagok 1,5m tudnak egymástól elhelyezkedni.
+- Stabil áramellátás  
+- Megfelelő tűzvédelemmel ellátott épület.  
+- Megfelelő számú fali csatlakozó
+- Stabil internetelérés
+- 5.0,vagy annál nagyobb verziószámú android operációs rendszerű mobilkészülékek. Különböző képernyő méretben  
+- 5.0,vagy annál nagyobb verziószámú android operációs tablet. Különböző képernyő méretben  
 
 ### 8. Karbantartási terv  
 A szoftver rendszernek támogatnia kell az alábbi tevékenységeket:  
