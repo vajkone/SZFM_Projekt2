@@ -142,7 +142,12 @@ Szükséges erőforrások:
 - Megfelelő számú fali csatlakozó
 - Stabil internetelérés
 - 5.0,vagy annál nagyobb verziószámú android operációs rendszerű mobilkészülékek. Különböző képernyő méretben  
-- 5.0,vagy annál nagyobb verziószámú android operációs tablet. Különböző képernyő méretben  
+- 5.0,vagy annál nagyobb verziószámú android operációs tablet. Különböző képernyő méretben   
+- Megfelelő hardverrel rendelkező számítógépek, android emulátorral.  
+
+Rendelkezésre álló erőforrások:  
+- 4.db 9.0 verziószámú feletti androidos mobiltelefon
+- 3db andorid operációs rendszerű tablet
 
 ### 8. Karbantartási terv  
 A szoftver rendszernek támogatnia kell az alábbi tevékenységeket:  
