@@ -146,8 +146,23 @@ Szükséges erőforrások:
 - Megfelelő hardverrel rendelkező számítógépek, android emulátorral.  
 
 Rendelkezésre álló erőforrások:  
-- 4.db 9.0 verziószámú feletti androidos mobiltelefon
-- 3db andorid operációs rendszerű tablet
+- 4.db 9.0 verziószámú feletti androidos mobiltelefon  
+- 3db andorid operációs rendszerű tablet  
+- 4db android emulátorral rendelkező laptop  
+- Megfelelő épület, a közös megbeszélésekhez
+- Online találkozóhoz szükséges program.
+
+Feladatkörök és felelősségek:  
+
+| Feladatkör       |    Felelősség/tevékenység    |   Személy   |
+|------------------|------------------------------|-------------|
+| Tesztelő         |    A teszt végrehajtása    |   GV, KM, MN, FZ   |
+| Tesztelő         |    Az észrevételek dokumentálása    |   Kiss Máté      |
+| Tesztelő         |    Teszt dokumentáció archiválása    |       Földesi Zoltán      |
+| Szakértő |    A szakértő az észrevételek elemzi és megoldást javasol.    |    Garbóczy Vajk  |
+| Teszt-koordinátor |    Teszt terv készítése    |  Kiss Máté    |
+| Teszt-koordinátor |    A tesztterv jóváhagyatása a     |    Mózes Nóra  |
+
 
 ### 8. Karbantartási terv  
 A szoftver rendszernek támogatnia kell az alábbi tevékenységeket:  
