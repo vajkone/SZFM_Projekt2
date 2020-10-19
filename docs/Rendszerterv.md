@@ -162,6 +162,16 @@ Feladatkörök és felelősségek:
 | Szakértő |    A szakértő az észrevételek elemzi és megoldást javasol.    |    Garbóczy Vajk  |
 | Teszt-koordinátor |    Teszt terv készítése    |  Kiss Máté    |
 | Teszt-koordinátor |    A tesztterv jóváhagyatása a     |    Mózes Nóra  |
+| Teszt-koordinátor |    A tesztterv jóváhagyatása a projektmenedzserrel    |  Földesi Zoltán    |
+| Teszt-koordinátor |    Teszt forgatókönyvek létrehozása    |   Kiss Máté   |
+| Teszt-koordinátor |    Inkonzisztenciák kezelése    |  Mózes Nóra    |
+| Teszt-koordinátor |    Helyes és időbeni hibakezelés    |   Garbóczy Vajk   |
+| Teszt-koordinátor |    Szükség esetén problémák eszkalálása a projekt menedzsernek    |    Mózes Nóra  |
+| Teszt-koordinátor |    Végső riport készítése    |   Kiss Máté   |
+| Teszt-koordinátor |    Teszt dokumentum archiválása    |   Földsei Zoltán   |
+| Teszt-koordinátor |    Az észrevételek státuszának követése, ill. dokumentálása    |   Kiss Máté   |
+| Projektvezető |    Teszt terv jóváhagyása    |    Garbóczy Vajk    |
+| Projektvezető |    Teszt forgatókönyv (testscript)    |  Garbóczy Vajk   |  
 
 
 ### 8. Karbantartási terv  
