@@ -173,6 +173,15 @@ Feladatkörök és felelősségek:
 | Projektvezető |    Teszt terv jóváhagyása    |    Garbóczy Vajk    |
 | Projektvezető |    Teszt forgatókönyv (testscript)    |  Garbóczy Vajk   |  
 
+Tesztkörnyezet:  
+A fejlesztők teljes hozzáféréssel végezzék a tesztelést.   
+
+Tesztelési eljárás leírása:  
+Lépések: A felhasználó által lehetséges esetek tesztelése    
+Várt érték és a teszt álltal adott értékek összehasonlítása    
+Teszt Szkriptek elkészítése (számítógépek által adott utasítások)  
+Unit tesztek elkészítése    
+
 
 ### 8. Karbantartási terv  
 A szoftver rendszernek támogatnia kell az alábbi tevékenységeket:  
