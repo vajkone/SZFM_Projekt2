@@ -26,7 +26,7 @@ class RegistrationActivity : AppCompatActivity() {
             val email=signUpEmail.text.toString()
             val password=signUpPassword.text.toString()
             val name=signUpName.text.toString()
-            val age="25";
+            val age=signUpAge.text.toString();
 
             progressBarSignup.visibility= View.VISIBLE
             mAuth!!.createUserWithEmailAndPassword(email,password)
