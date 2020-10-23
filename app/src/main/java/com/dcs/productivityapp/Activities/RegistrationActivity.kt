@@ -26,7 +26,31 @@ class RegistrationActivity : AppCompatActivity() {
             val email=signUpEmail.text.toString()
             val password=signUpPassword.text.toString()
             val name=signUpName.text.toString()
-            val age=signUpAge.text.toString();
+            val age=signUpAge.text.toString()
+
+            if(name.isEmpty()){
+                signUpName.error = "Enter your name!"
+                signUpName.requestFocus()
+                return@setOnClickListener
+            }
+
+            if(age.isEmpty()){
+                signUpAge.error = "Enter your age!"
+                signUpAge.requestFocus()
+                return@setOnClickListener
+            }
+
+            if(email.isEmpty()){
+                signUpEmail.error = "Enter your Email!"
+                signUpEmail.requestFocus()
+                return@setOnClickListener
+            }
+
+            if(password.isEmpty()){
+                signUpPassword.error = "Enter your password!"
+                signUpPassword.requestFocus()
+                return@setOnClickListener
+            }
 
             progressBarSignup.visibility= View.VISIBLE
             mAuth!!.createUserWithEmailAndPassword(email,password)
