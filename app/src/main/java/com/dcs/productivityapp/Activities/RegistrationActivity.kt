@@ -2,6 +2,7 @@ package com.dcs.productivityapp.Activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import android.view.View
 import android.widget.Toast
 import com.dcs.productivityapp.Model.User
@@ -46,8 +47,20 @@ class RegistrationActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+                signUpEmail.error="Please provide valid email!"
+                signUpEmail.requestFocus()
+                return@setOnClickListener
+            }
+
             if(password.isEmpty()){
                 signUpPassword.error = "Enter your password!"
+                signUpPassword.requestFocus()
+                return@setOnClickListener
+            }
+
+            if(password.length <6){
+                signUpPassword.error = "Min password length should be 6 characters!"
                 signUpPassword.requestFocus()
                 return@setOnClickListener
             }
