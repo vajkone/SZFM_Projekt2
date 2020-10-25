@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_signup.*
 
-private var mAuth: FirebaseAuth? = null
+
 
 
 class RegistrationActivity : AppCompatActivity() {
