@@ -69,7 +69,7 @@ class RegistrationActivity : AppCompatActivity() {
             mAuth!!.createUserWithEmailAndPassword(email,password)
                 .addOnCompleteListener {
                     if (it.isSuccessful){
-                        val user = User(name,email,age)
+                        val user = User(name, email)
                         FirebaseDatabase.getInstance().getReference("users")
                             .child(FirebaseAuth.getInstance().currentUser!!.uid).setValue(user)
                             .addOnCompleteListener {task ->

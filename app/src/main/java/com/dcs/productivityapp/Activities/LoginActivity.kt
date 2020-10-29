@@ -1,14 +1,17 @@
 package com.dcs.productivityapp.Activities
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.util.Patterns
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentActivity
 import com.dcs.productivityapp.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
+
 
 var mAuth: FirebaseAuth? =null
 
@@ -19,6 +22,16 @@ class LoginActivity : AppCompatActivity() {
 
         mAuth=FirebaseAuth.getInstance()
         progressBarLogin.visibility= View.INVISIBLE
+
+        val user = FirebaseAuth.getInstance().currentUser
+        if (user != null) {
+            // User is signed in
+            val i = Intent(this, MainActivity::class.java)
+            i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(i)
+        } else {
+            // User is signed out
+        }
 
 
 
