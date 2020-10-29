@@ -54,5 +54,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        gotoNotesBtn.setOnClickListener {
+            val i=Intent(this,NoteTaking::class.java)
+            startActivity(i)
+        }
+
     }
 }
