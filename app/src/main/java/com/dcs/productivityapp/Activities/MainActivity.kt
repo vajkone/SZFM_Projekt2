@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         gotoNotesBtn.setOnClickListener {
-            val i=Intent(this,NoteTaking::class.java)
+            val i=Intent(this,NoteListing::class.java)
             startActivity(i)
         }
 
