@@ -1,5 +1,6 @@
 package com.dcs.productivityapp.Activities
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -23,6 +24,7 @@ import java.lang.Exception
 
 class NoteListing : AppCompatActivity() {
 
+    private var recentNoteId: String?=""
     private var layoutManager: RecyclerView.LayoutManager? = null
     private var noteListAdapter: NoteListAdapter? = null
     private var noteList: MutableList<Note>? = null
@@ -60,8 +62,7 @@ class NoteListing : AppCompatActivity() {
 
         addNewNote.setOnClickListener {
             val intent = Intent(this,NoteTaking::class.java)
-            startActivity(intent)
-            //startActivityForResult(intent,1)
+            startActivityForResult(intent,1)
         }
     }
 
@@ -82,5 +83,40 @@ class NoteListing : AppCompatActivity() {
         }catch (e: Exception){
             Log.e("Error: ",e.message)
         }
+    }
+
+    private fun getNoteById(id:String) = CoroutineScope(Dispatchers.IO).launch {
+        try {
+            val querySnapshot = notesDocRef.whereEqualTo("id", id).get().await()
+
+
+
+            for (doc in querySnapshot.documents) {
+
+                val note = doc.toObject<Note>()
+                noteListItems!!.add(note!!)
+                Log.d("Added note: ","${note.noteTitle}")
+            }
+            withContext(Dispatchers.Main){
+
+                noteListAdapter!!.notifyDataSetChanged()
+
+            }
+        }catch (e:Exception){
+            Log.e("Error: ",e.message)
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (resultCode== Activity.RESULT_OK){
+            recentNoteId = data!!.getStringExtra("recentNoteID")
+            getNoteById(recentNoteId!!)
+            noteListAdapter!!.notifyDataSetChanged()
+
+        }
+
+
     }
 }
