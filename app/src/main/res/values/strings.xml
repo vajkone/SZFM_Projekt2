@@ -11,4 +11,6 @@
     <string name="menu_notes">Notes</string>
     <string name="menu_todo">Todo List</string>
     <string name="menu_habits">Habit Tracker</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_contact">Contact</string>
 </resources>

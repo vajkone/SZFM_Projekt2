@@ -2,15 +2,37 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/home"
+        android:title="@string/menu_home"
+        android:icon="@drawable/ic_action_home"/>
+
+    <item
         android:id="@+id/notes"
-        android:title="@string/menu_notes" />
+        android:title="@string/menu_notes"
+        android:icon="@drawable/ic_action_notes"/>
 
     <item
         android:id="@+id/todo"
-        android:title="@string/menu_todo" />
+        android:title="@string/menu_todo"
+        android:icon="@drawable/ic_action_todo"/>
 
     <item
         android:id="@+id/habits"
-        android:title="@string/menu_habits" />
+        android:title="@string/menu_habits"
+        android:icon="@drawable/ic_action_habit"/>
+
+    <item android:title="Other">
+
+        <menu>
+
+            <item
+                android:id="@+id/contact"
+                android:title="@string/menu_contact"
+                android:icon="@drawable/ic_action_contact"/>
+
+        </menu>
+
+    </item>
+
 
 </menu>
