@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import com.dcs.productivityapp.Model.User
 import com.dcs.productivityapp.R
 import com.google.firebase.auth.FirebaseAuth
@@ -22,6 +24,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        imageMenu.setOnClickListener {
+            drawerLayout.openDrawer(GravityCompat.START)
+        }
 
         var user = FirebaseAuth.getInstance().currentUser
         var dbref = FirebaseDatabase.getInstance().getReference("users")
