@@ -3,11 +3,7 @@ package com.dcs.productivityapp.Activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.MenuItem
-import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
-import androidx.drawerlayout.widget.DrawerLayout
 import com.dcs.productivityapp.Model.User
 import com.dcs.productivityapp.R
 import com.google.firebase.auth.FirebaseAuth
@@ -75,7 +71,8 @@ class MainActivity : AppCompatActivity() {
 
                 }
                 R.id.contact -> {
-
+                    val i=Intent(this,Contact::class.java)
+                    startActivity(i)
                 }
                 R.id.logout -> {
                     FirebaseAuth.getInstance().signOut()
