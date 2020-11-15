@@ -7,6 +7,7 @@ import android.widget.ListView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.dcs.productivityapp.Model.ToDoModel
 import com.dcs.productivityapp.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.*
@@ -35,7 +36,7 @@ class MainActivity : AppCompatActivity() ,UpdateAndDelete {
             alertDialog.setTitle("Enter To Do item")
             alertDialog.setView(textEditText)
             alertDialog.setPositiveButton("Add"){dialog, i ->
-                val todoItemData=ToDoModel.createList()
+                val todoItemData= ToDoModel.createList()
                 todoItemData.itemDataText=textEditText.text.toString()
                 todoItemData.done=false
 
@@ -65,3 +66,30 @@ class MainActivity : AppCompatActivity() ,UpdateAndDelete {
     })
 
 }
+
+private fun addItemToList(snapshot: DataSnapshot) {
+
+    val items=snapshot.children.iterator()
+
+    if(items.hasNext()){
+        val toDoIndexedValue=items.next()
+        val itemsIterator=toDoIndexedValue.children.iterator()
+
+        while(itemsIterator.hasNext()){
+            val currentItem=itemsIterator.next()
+            val toDoItemData=ToDoModel.createList()
+            val map=currentItem.getValue() as HashMap<String, Any>
+
+            toDoItemData.UID=currentItem.key
+            toDoItemData.done=map.get("done") as Boolean?
+            toDoItemData.itemDataText=map.get("itemDataText") as String?
+            toDOList!!.add(toDoItemData)
+        }
+
+    }
+
+    adapter.notifyDataSetChanged()
+
+}
+
+
