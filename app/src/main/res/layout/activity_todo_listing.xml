@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".Activities.TodoListing">
+    tools:context=".Activities.">
 
     <ListView
         android:id="@+id/item_listView"
@@ -30,4 +30,4 @@
         ></com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
