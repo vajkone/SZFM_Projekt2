@@ -38,7 +38,10 @@ class ToDoAdapter(context: Context,toDoList:MutableList<ToDoModel>) : BaseAdapte
         viewHolder.isDone.setOnClickListener {
             updateAndDelete.modifyItem(UID, !done)
         }
-        
+
+        viewHolder.isDeleted.setOnClickListener{
+            updateAndDelete.onItemDelete(UID)
+        }
 
         return view
     }
