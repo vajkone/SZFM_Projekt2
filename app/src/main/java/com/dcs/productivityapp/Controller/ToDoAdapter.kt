@@ -47,7 +47,17 @@ class ToDoAdapter(context: Context,toDoList:MutableList<ToDoModel>) : BaseAdapte
     }
 
 
+    override fun getCount(): Int {
+        return itemList.size
+    }
 
+    override fun getItem(p0: Int): Any {
+        return itemList.get(p0)
+    }
+
+    override fun getItemId(p0: Int): Long {
+        return p0.toLong()
+    }
 
 
 
