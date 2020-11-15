@@ -11,7 +11,9 @@ import com.dcs.productivityapp.R
 
 class ToDoAdapter(context: Context,toDoList:MutableList<ToDoModel>) : BaseAdapter() {
 
-
+    private val inflater:LayoutInflater= LayoutInflater.from(context)
+    private var itemList=toDoList
+    private var updateAndDelete: UpdateAndDelete = context as UpdateAndDelete
 
 
 
