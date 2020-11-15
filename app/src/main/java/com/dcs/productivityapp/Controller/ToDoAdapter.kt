@@ -74,7 +74,7 @@ class ToDoAdapter(context: Context,toDoList:MutableList<ToDoModel>) : BaseAdapte
 private class ListViewHolder(row:View?) {
     val textLabel: TextView=row!!.findViewById(R.id.item_textView) as TextView
     val isDone: CheckBox =row!!.findViewById(R.id.checkbox) as CheckBox
-    val isDeleted:ImageButton=row!!.findViewById(R.id.close) as ImageButton
+    val isDeleted: Button=row!!.findViewById(R.id.close) as Button
 }
 
 
