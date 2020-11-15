@@ -92,4 +92,9 @@ private fun addItemToList(snapshot: DataSnapshot) {
 
 }
 
+override fun modifyItem(itemUID: String, isDone: Boolean) {
+    val itemReference=database.child("todo").child(itemUID)
+    itemReference.child("done").setValue(isDone)
+}
+
 
