@@ -97,4 +97,11 @@ override fun modifyItem(itemUID: String, isDone: Boolean) {
     itemReference.child("done").setValue(isDone)
 }
 
+override fun onItemDelete(itemUID: String) {
+    val itemReference=database.child("todo").child(itemUID)
+    itemReference.removeValue()
+    adapter.notifyDataSetChanged()
+}
+}
+
 
