@@ -15,7 +15,28 @@ class ToDoAdapter(context: Context,toDoList:MutableList<ToDoModel>) : BaseAdapte
     private var itemList=toDoList
     private var updateAndDelete: UpdateAndDelete = context as UpdateAndDelete
 
+    override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
+        val UID: String = itemList.get(p0).UID as String
+        val itemTextData = itemList.get(p0).itemDataText as String
+        val done: Boolean = itemList.get(p0).done as Boolean
 
+        val view: View
+        val viewHolder: ListViewHolder
+
+        if (p1 == null) {
+            view = inflater.inflate(R.layout.row_itemslayout, p2, false)
+            viewHolder = ListViewHolder(view)
+            view.tag = viewHolder
+        } else {
+            view = p1
+            viewHolder = view.tag as ListViewHolder
+        }
+
+        viewHolder.textLabel.text = itemTextData
+        viewHolder.isDone.isChecked = done
+
+        return view
+    }
 
 
 
