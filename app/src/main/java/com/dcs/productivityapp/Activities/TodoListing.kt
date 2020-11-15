@@ -49,5 +49,19 @@ class MainActivity : AppCompatActivity() ,UpdateAndDelete {
             alertDialog.show()
         }
     }
+    toDOList= mutableListOf<ToDoModel>()
+    adapter=ToDoAdapter(this,toDOList!!)
+    listViewItem!!.adapter=adapter
+    database.addValueEventListener(object : ValueEventListener{
+        override fun onCancelled(error: DatabaseError) {
+            Toast.makeText(applicationContext,"No itemAdded",Toast.LENGTH_LONG).show()
+        }
+
+        override fun onDataChange(snapshot: DataSnapshot) {
+            toDOList!!.clear()
+            addItemToList(snapshot)
+        }
+
+    })
 
 }
