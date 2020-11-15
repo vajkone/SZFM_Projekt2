@@ -7,6 +7,7 @@ import android.widget.ListView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.dcs.productivityapp.Controller.ToDoAdapter
 import com.dcs.productivityapp.Model.ToDoModel
 import com.dcs.productivityapp.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -23,8 +24,8 @@ class TodoListing : AppCompatActivity() ,UpdateAndDelete {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_todo_listing)
 
-        val fab = findViewById<View>(com.google.firebase.database.R.id.fab) as FloatingActionButton
-        listViewItem = findViewById<ListView>(com.google.firebase.database.R.id.item_listView)
+        val fab = findViewById<View>(R.id.fab) as FloatingActionButton
+        listViewItem = findViewById<ListView>(R.id.item_listView)
 
         database = FirebaseDatabase.getInstance().reference
 
