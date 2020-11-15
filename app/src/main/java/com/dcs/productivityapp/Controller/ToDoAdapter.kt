@@ -35,6 +35,11 @@ class ToDoAdapter(context: Context,toDoList:MutableList<ToDoModel>) : BaseAdapte
         viewHolder.textLabel.text = itemTextData
         viewHolder.isDone.isChecked = done
 
+        viewHolder.isDone.setOnClickListener {
+            updateAndDelete.modifyItem(UID, !done)
+        }
+        
+
         return view
     }
 
