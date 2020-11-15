@@ -12,7 +12,7 @@ import com.dcs.productivityapp.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.*
 
-class MainActivity : AppCompatActivity() ,UpdateAndDelete {
+class TodoListing : AppCompatActivity() ,UpdateAndDelete {
 
     lateinit var database: DatabaseReference
     var toDOList: MutableList<ToDoModel>? = null

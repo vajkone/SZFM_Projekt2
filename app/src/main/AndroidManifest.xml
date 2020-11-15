@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Activities.NoteTaking"></activity>
+        <activity android:name=".Activities.TodoListing"></activity>
         <activity android:name=".Activities.NoteListing" />
         <activity
             android:name=".Activities.MainActivity"
