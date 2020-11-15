@@ -15,57 +15,57 @@ import com.google.firebase.database.*
 class MainActivity : AppCompatActivity() ,UpdateAndDelete {
 
     lateinit var database: DatabaseReference
-    var toDOList:MutableList<ToDoModel>?=null
+    var toDOList: MutableList<ToDoModel>? = null
     lateinit var adapter: ToDoAdapter
-    private var listViewItem: ListView?=null
+    private var listViewItem: ListView? = null
 
-    override fun onCreate(savedInstanceState: Bundle?)
-    {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_todo_listing)
 
-        val fab=findViewById<View>(com.google.firebase.database.R.id.fab) as FloatingActionButton
-        listViewItem=findViewById<ListView>(com.google.firebase.database.R.id.item_listView)
+        val fab = findViewById<View>(com.google.firebase.database.R.id.fab) as FloatingActionButton
+        listViewItem = findViewById<ListView>(com.google.firebase.database.R.id.item_listView)
 
-        database=FirebaseDatabase.getInstance().reference
+        database = FirebaseDatabase.getInstance().reference
 
-        fab.setOnClickListener{view ->
-            val alertDialog=AlertDialog.Builder(this)
-            val textEditText=EditText(this)
+        fab.setOnClickListener { view ->
+            val alertDialog = AlertDialog.Builder(this)
+            val textEditText = EditText(this)
             alertDialog.setMessage("Add TODO item")
             alertDialog.setTitle("Enter To Do item")
             alertDialog.setView(textEditText)
-            alertDialog.setPositiveButton("Add"){dialog, i ->
-                val todoItemData= ToDoModel.createList()
-                todoItemData.itemDataText=textEditText.text.toString()
-                todoItemData.done=false
+            alertDialog.setPositiveButton("Add") { dialog, i ->
+                val todoItemData = ToDoModel.createList()
+                todoItemData.itemDataText = textEditText.text.toString()
+                todoItemData.done = false
 
-                val newItemData=database.child("todo").push()
-                todoItemData.UID=newItemData.key
+                val newItemData = database.child("todo").push()
+                todoItemData.UID = newItemData.key
 
                 newItemData.setValue(todoItemData)
                 dialog.dismiss()
-                Toast.makeText(this,"item saved",Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "item saved", Toast.LENGTH_LONG).show()
             }
             alertDialog.show()
         }
+
+        toDOList = mutableListOf<ToDoModel>()
+        adapter = ToDoAdapter(this, toDOList!!)
+        listViewItem!!.adapter = adapter
+        database.addValueEventListener(object : ValueEventListener {
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(applicationContext, "No itemAdded", Toast.LENGTH_LONG).show()
+            }
+
+            override fun onDataChange(snapshot: DataSnapshot) {
+                toDOList!!.clear()
+                addItemToList(snapshot)
+            }
+
+        })
     }
-    toDOList= mutableListOf<ToDoModel>()
-    adapter=ToDoAdapter(this,toDOList!!)
-    listViewItem!!.adapter=adapter
-    database.addValueEventListener(object : ValueEventListener{
-        override fun onCancelled(error: DatabaseError) {
-            Toast.makeText(applicationContext,"No itemAdded",Toast.LENGTH_LONG).show()
-        }
 
-        override fun onDataChange(snapshot: DataSnapshot) {
-            toDOList!!.clear()
-            addItemToList(snapshot)
-        }
 
-    })
-
-}
 
 private fun addItemToList(snapshot: DataSnapshot) {
 
@@ -102,6 +102,9 @@ override fun onItemDelete(itemUID: String) {
     itemReference.removeValue()
     adapter.notifyDataSetChanged()
 }
+
+
 }
+
 
 
