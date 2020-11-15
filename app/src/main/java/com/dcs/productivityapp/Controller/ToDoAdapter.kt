@@ -16,9 +16,10 @@ class ToDoAdapter(context: Context,toDoList:MutableList<ToDoModel>) : BaseAdapte
     private var updateAndDelete: UpdateAndDelete = context as UpdateAndDelete
 
     override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
-        val UID: String = itemList.get(p0).UID as String
-        val itemTextData = itemList.get(p0).itemDataText as String
-        val done: Boolean = itemList.get(p0).done as Boolean
+        val UID: String? = itemList.get(p0).UID as String?
+        val itemTextData = itemList.get(p0).itemDataText as String?
+        val done = if  (itemList.get(p0).done != null) itemList.get(p0).done as Boolean?
+        else false
 
         val view: View
         val viewHolder: ListViewHolder
@@ -33,14 +34,14 @@ class ToDoAdapter(context: Context,toDoList:MutableList<ToDoModel>) : BaseAdapte
         }
 
         viewHolder.textLabel.text = itemTextData
-        viewHolder.isDone.isChecked = done
+        viewHolder.isDone.isChecked = done!!
 
         viewHolder.isDone.setOnClickListener {
-            updateAndDelete.modifyItem(UID, !done)
+            updateAndDelete.modifyItem(UID!!, !done!!)
         }
 
         viewHolder.isDeleted.setOnClickListener{
-            updateAndDelete.onItemDelete(UID)
+            updateAndDelete.onItemDelete(UID!!)
         }
 
         return view
