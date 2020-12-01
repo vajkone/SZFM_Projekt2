@@ -14,6 +14,24 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.dcs.productivityapp.Controller.ToDoAdapter
+import com.dcs.productivityapp.Model.Note
+import com.dcs.productivityapp.Model.ToDoModel
+import com.dcs.productivityapp.R
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.SetOptions
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.firestore.ktx.toObject
+import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_note_listing.view.*
+import kotlinx.android.synthetic.main.activity_todo_listing.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.tasks.await
+import kotlinx.coroutines.withContext
+import java.lang.Exception
+import kotlin.collections.ArrayList
 
 class TodoListing : AppCompatActivity() {
 
@@ -90,3 +108,76 @@ class TodoListing : AppCompatActivity() {
 
         }
     }
+    private fun saveTodo(todo: ToDoModel)= CoroutineScope(Dispatchers.IO).launch{
+        try {
+            todosDocRef.add(todo).await()
+            //Toast.makeText(this@NoteTaking,"Data uploaded",Toast.LENGTH_LONG).show()
+            Log.d("Data: ","Uploaded")
+
+        }catch (e: Exception){
+            withContext(Dispatchers.Main){
+                Log.d("Data: ","Not Uploaded")
+            }
+        }
+
+    }
+
+    private fun getTodos()= CoroutineScope(Dispatchers.IO).launch {
+        try {
+            val querySnapshot=todosDocRef.get().await()
+
+            for (doc in querySnapshot.documents) {
+
+                val todo = doc.toObject<ToDoModel>()
+                todoListItems!!.add(todo!!)
+                Log.d("Added todo: ","${todo.itemDataText}")
+            }
+            withContext(Dispatchers.Main){
+                ToDoAdapter!!.notifyDataSetChanged()
+            }
+
+        }catch (e: Exception){
+            Log.e("Error: ",e.message)
+        }
+    }
+
+
+    private fun getTodosById(id:String) = CoroutineScope(Dispatchers.IO).launch {
+        try {
+            val querySnapshot = todosDocRef.whereEqualTo("id", id).get().await()
+
+            for (doc in querySnapshot.documents) {
+
+                val todo = doc.toObject<ToDoModel>()
+                todoListItems!!.add(todo!!)
+                Log.d("Added todo: ","${todo.itemDataText}")
+            }
+            withContext(Dispatchers.Main){
+
+                ToDoAdapter!!.notifyDataSetChanged()
+
+            }
+        }catch (e:Exception){
+            Log.e("Error: ",e.message)
+        }
+    }
+
+
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (resultCode== Activity.RESULT_OK){
+            recentTodoId = data!!.getStringExtra("recentTodoID")
+            getTodosById(recentTodoId!!)
+            ToDoAdapter!!.notifyDataSetChanged()
+
+        }
+
+
+    }
+
+
+
+}
+    
