@@ -8,15 +8,15 @@
     android:background="#000000"
     tools:context=".Activities.TodoListing">
 
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/item_listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#fff"
+        android:background="#F0FFF0"
         android:paddingLeft="10dp"
         android:scrollbars="none"
         android:paddingRight="10dp"
-        ></ListView>
+        />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
