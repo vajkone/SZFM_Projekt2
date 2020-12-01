@@ -12,6 +12,8 @@
         <activity android:name=".Activities.NoteTaking"></activity>
         <activity android:name=".Activities.TodoListing"></activity>
         <activity android:name=".Activities.NoteListing" />
+        <activity android:name=".Activities.HabitsListing" />
+        <activity android:name=".Activities.HabitSum" />
         <activity
             android:name=".Activities.MainActivity"
             android:label="@string/title_activity_main"

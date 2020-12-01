@@ -68,7 +68,8 @@ class MainActivity : AppCompatActivity() {
                     val i=Intent(this,TodoListing::class.java)
                     startActivity(i)
                 }
-                R.id.habits -> {
+                R.id.habits -> {val i=Intent(this,HabitsListing::class.java)
+                    startActivity(i)
 
                 }
                 R.id.contact -> {
