@@ -40,7 +40,7 @@ class ToDoAdapter(private var list: MutableList<ToDoModel>, private val context:
         fun bindTodo(todo: ToDoModel){
 
             val todoTitle = itemView.findViewById(R.id.item_textView) as TextView
-            val todoDeleteButton: ImageButton =itemView.findViewById(R.id.close) as ImageButton
+            val todoDeleteButton: Button =itemView.findViewById(R.id.close) as Button
             val isDone: CheckBox =itemView.findViewById(R.id.checkbox) as CheckBox
 
             todoTitle.text=todo.itemDataText
