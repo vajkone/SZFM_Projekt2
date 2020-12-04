@@ -1,33 +1,74 @@
 package com.dcs.productivityapp.Activities
 
+import android.app.Activity
+import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.EditText
-import android.widget.ListView
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.dcs.productivityapp.Controller.ToDoAdapter
+import com.dcs.productivityapp.Model.Note
 import com.dcs.productivityapp.Model.ToDoModel
 import com.dcs.productivityapp.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.firebase.database.*
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.SetOptions
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.firestore.ktx.toObject
+import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_note_listing.view.*
+import kotlinx.android.synthetic.main.activity_todo_listing.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.tasks.await
+import kotlinx.coroutines.withContext
+import java.lang.Exception
+import kotlin.collections.ArrayList
 
-class TodoListing : AppCompatActivity() ,UpdateAndDelete {
+class TodoListing : AppCompatActivity() {
 
-    lateinit var database: DatabaseReference
-    var toDOList: MutableList<ToDoModel>? = null
-    lateinit var adapter: ToDoAdapter
-    private var listViewItem: ListView? = null
 
+    private var recentTodoId: String?=""
+    private var layoutManager2: RecyclerView.LayoutManager? = null
+    private var ToDoAdapter: ToDoAdapter? = null
+    private var todoList: MutableList<ToDoModel>? = null
+    private var todoListItems: ArrayList<ToDoModel>? = null
+
+    private var currentUser= FirebaseAuth.getInstance().currentUser
+
+    private val todosDocRef= Firebase.firestore.collection("users")
+        .document(currentUser!!.uid)
+        .collection("todos")
+
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_todo_listing)
 
-        val fab = findViewById<View>(R.id.fab) as FloatingActionButton
-        listViewItem = findViewById<ListView>(R.id.item_listView)
+        layoutManager2= LinearLayoutManager(this)
+        todoList= ArrayList()
+        todoListItems= ArrayList()
 
-        database = FirebaseDatabase.getInstance().reference
+        ToDoAdapter= ToDoAdapter(todoListItems!!,this)
+        getTodos()
+
+        for (todos in todoListItems!!){
+            Log.d("In: ",todos.itemDataText!!)
+        }
+
+        item_listView.layoutManager=layoutManager2
+        item_listView.adapter= ToDoAdapter
+
+        val fab = findViewById<View>(R.id.fab) as FloatingActionButton
 
         fab.setOnClickListener { view ->
             val alertDialog = AlertDialog.Builder(this)
@@ -36,19 +77,12 @@ class TodoListing : AppCompatActivity() ,UpdateAndDelete {
             alertDialog.setTitle("Enter To Do item")
             alertDialog.setView(textEditText)
             alertDialog.setPositiveButton("Add") { dialog, i ->
-                val todoItemData = ToDoModel.createList()
-                todoItemData.itemDataText = textEditText.text.toString()
-                todoItemData.done = false
-
-                val newItemData = database.child("todo").push()
-                todoItemData.UID = newItemData.key
-
-                newItemData.setValue(todoItemData)
-                dialog.dismiss()
-                Toast.makeText(this, "item saved", Toast.LENGTH_LONG).show()
+                createTodo(textEditText)
             }
             alertDialog.show()
         }
+
+    }
 
         toDOList = mutableListOf<ToDoModel>()
         adapter = ToDoAdapter(this, toDOList!!)
