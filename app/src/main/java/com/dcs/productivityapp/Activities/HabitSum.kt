@@ -47,4 +47,38 @@ class HabitSum : AppCompatActivity() {
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
+    private fun getClickedHabit(): Job = CoroutineScope(Dispatchers.IO).launch {
+        try {
+            val querySnapshot = notesDocRef.whereEqualTo("id", habitId).get().await()
+            var habit = Habits()
+            for (doc in querySnapshot.documents) {
+                //habits
+                habit= doc.toObject<Habits>()!!
+
+            }
+            withContext(Dispatchers.Main) {
+                val formatter =  DateTimeFormatter.ofPattern("yyyy.MM.dd")
+                val day = LocalDate.parse(habit.checkDate, formatter)
+                val diff = ChronoUnit.DAYS.between(LocalDate.now(),day)
+                Log.d("diff",diff.toString())
+
+                progressBar.setMax(Math.ceil(diff.toDouble()).toInt())
+                Log.d("diff",Math.ceil(diff.toDouble()).toInt().toString())
+
+                progressBar.setMin(0)
+                progressBar.setProgress(habit.days)
+                progressBar.setVisibility(VISIBLE)
+                habitTitle.setText(habit.itemDataText)
+                habitDate.setText(habit.creationDate)
+                habitdays.setText(habit.days.toString())
+
+            }
+        } catch (e: Exception) {
+            Log.e("Error: ", e.message)
+        }
+    }
+
+}
+
 
