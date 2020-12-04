@@ -84,62 +84,103 @@ class TodoListing : AppCompatActivity() {
 
     }
 
-        toDOList = mutableListOf<ToDoModel>()
-        adapter = ToDoAdapter(this, toDOList!!)
-        listViewItem!!.adapter = adapter
-        database.addValueEventListener(object : ValueEventListener {
-            override fun onCancelled(error: DatabaseError) {
-                Toast.makeText(applicationContext, "No itemAdded", Toast.LENGTH_LONG).show()
-            }
+    private fun createTodo(s: EditText) {
 
-            override fun onDataChange(snapshot: DataSnapshot) {
-                toDOList!!.clear()
-                addItemToList(snapshot)
-            }
+        var todo = ToDoModel()
 
-        })
+
+        todo.itemDataText = s.text.toString()
+        todo.ID = todosDocRef.document().id
+        todo.done = false
+        Toast.makeText(this, todo.itemDataText, Toast.LENGTH_LONG).show()
+
+        Log.d("Note id: ",todo.ID!!)
+
+        if (todo.itemDataText == "") {
+            Toast.makeText(applicationContext, "Please enter a title", Toast.LENGTH_SHORT).show()
+
+        } else {
+            saveTodo(todo)
+            todoListItems?.clear()
+            getTodos()
+            ToDoAdapter!!.notifyDataSetChanged()
+
+        }
     }
 
 
 
-private fun addItemToList(snapshot: DataSnapshot) {
+    private fun saveTodo(todo: ToDoModel)= CoroutineScope(Dispatchers.IO).launch{
+        try {
+            todosDocRef.add(todo).await()
+            //Toast.makeText(this@NoteTaking,"Data uploaded",Toast.LENGTH_LONG).show()
+            Log.d("Data: ","Uploaded")
 
-    val items=snapshot.children.iterator()
-
-    if(items.hasNext()){
-        val toDoIndexedValue=items.next()
-        val itemsIterator=toDoIndexedValue.children.iterator()
-
-        while(itemsIterator.hasNext()){
-            val currentItem=itemsIterator.next()
-            val toDoItemData=ToDoModel.createList()
-            val map=currentItem.getValue() as HashMap<String, Any>
-
-            toDoItemData.UID=currentItem.key
-            toDoItemData.done=map.get("done") as Boolean?
-            toDoItemData.itemDataText=map.get("itemDataText") as String?
-            toDOList!!.add(toDoItemData)
+        }catch (e: Exception){
+            withContext(Dispatchers.Main){
+                Log.d("Data: ","Not Uploaded")
+            }
         }
 
     }
 
-    adapter.notifyDataSetChanged()
+    private fun getTodos()= CoroutineScope(Dispatchers.IO).launch {
+        try {
+            val querySnapshot=todosDocRef.get().await()
+
+            for (doc in querySnapshot.documents) {
+
+                val todo = doc.toObject<ToDoModel>()
+                todoListItems!!.add(todo!!)
+                Log.d("Added todo: ","${todo.itemDataText}")
+            }
+            withContext(Dispatchers.Main){
+                ToDoAdapter!!.notifyDataSetChanged()
+            }
+
+        }catch (e: Exception){
+            Log.e("Error: ",e.message)
+        }
+    }
+
+
+    private fun getTodosById(id:String) = CoroutineScope(Dispatchers.IO).launch {
+        try {
+            val querySnapshot = todosDocRef.whereEqualTo("id", id).get().await()
+
+            for (doc in querySnapshot.documents) {
+
+                val todo = doc.toObject<ToDoModel>()
+                todoListItems!!.add(todo!!)
+                Log.d("Added todo: ","${todo.itemDataText}")
+            }
+            withContext(Dispatchers.Main){
+
+                ToDoAdapter!!.notifyDataSetChanged()
+
+            }
+        }catch (e:Exception){
+            Log.e("Error: ",e.message)
+        }
+    }
+
+
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (resultCode== Activity.RESULT_OK){
+            recentTodoId = data!!.getStringExtra("recentTodoID")
+            getTodosById(recentTodoId!!)
+            ToDoAdapter!!.notifyDataSetChanged()
+
+        }
+
+
+    }
+
+
 
 }
-
-override fun modifyItem(itemUID: String, isDone: Boolean) {
-    val itemReference=database.child("todo").child(itemUID)
-    itemReference.child("done").setValue(isDone)
-}
-
-override fun onItemDelete(itemUID: String) {
-    val itemReference=database.child("todo").child(itemUID)
-    itemReference.removeValue()
-    adapter.notifyDataSetChanged()
-}
-
-
-}
-
 
 
