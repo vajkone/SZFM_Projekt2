@@ -11,10 +11,7 @@ import com.dcs.productivityapp.Controller.ToDoAdapter
 import com.dcs.productivityapp.Model.ToDoModel
 import com.dcs.productivityapp.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
 
 class TodoListing : AppCompatActivity() ,UpdateAndDelete {
 
@@ -22,8 +19,6 @@ class TodoListing : AppCompatActivity() ,UpdateAndDelete {
     var toDOList: MutableList<ToDoModel>? = null
     lateinit var adapter: ToDoAdapter
     private var listViewItem: ListView? = null
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
