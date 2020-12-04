@@ -89,7 +89,65 @@ class ToDoAdapter(private var list: MutableList<ToDoModel>, private val context:
                 .get()
                 .await()
 
+            if (noteQuery.documents.isNotEmpty()){
+                for (doc in noteQuery){
+                    try {
+                        notesDocRef.document(doc.id).delete().await()
+                    }catch (e: Exception){
+                        Log.e("Error: ",e.message)
+                    }
+                }
+            }
+        }
+    }
 
+    private fun updatedTodo(todos: ToDoModel): ToDoModel? {
+        var todo=ToDoModel()
+        todo.itemDataText=todos?.itemDataText
+        todo.ID=todos.ID
+        todo.done=!todos?.done!!
+
+        return todo
+
+    }
+
+    private fun updateTodo(todo: ToDoModel)= CoroutineScope(Dispatchers.IO).launch {
+
+        val noteQuery=todosDocRef
+            .whereEqualTo("id",todo.ID)
+            .get()
+            .await()
+
+        if (noteQuery.documents.isNotEmpty()){
+            for (doc in noteQuery){
+                try {
+                    todosDocRef.document(doc.id).set(todo, SetOptions.merge())
+
+                }catch (e:Exception){
+                    Log.e("error: ",e.message)
+                }
+            }
+        }
+
+    }
+
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ToDoAdapter.ViewHolder {
+        val view = LayoutInflater.from(context).inflate(R.layout.row_itemslayout,parent,false)
+        return ViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.bindTodo(list[position])
+    }
+
+    override fun getItemCount(): Int {
+        return  list.size
+    }
+
+
+
+}
 
 
 
