@@ -141,11 +141,9 @@ class HabitsListing : AppCompatActivity() {
 
         }else{
             saveHabit(habit)
-            setContentView(R.layout.activity_habits_listing)
-          val intent = Intent()
-         intent.putExtra("recentHabitID", habit.ID!!)
-          setResult(RESULT_OK, intent)
-          finish()
+            habitListItems?.clear()
+            getHabits()
+            habitListAdapter!!.notifyDataSetChanged()
       }
 
 
