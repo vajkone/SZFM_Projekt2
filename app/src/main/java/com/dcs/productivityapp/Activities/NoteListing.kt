@@ -95,6 +95,15 @@ class NoteListing : AppCompatActivity() {
             sortedByDate=true
         }
 
+        defaultList.setOnClickListener {
+            var sortedlist = noteListItems!!.sortedWith(compareBy { it.noteDate }).reversed()
+            noteListItems!!.clear()
+            for (li in sortedlist) {
+                noteListItems!!.add(li)
+            }
+            noteListAdapter!!.notifyDataSetChanged()
+        }
+
 
     }
 
