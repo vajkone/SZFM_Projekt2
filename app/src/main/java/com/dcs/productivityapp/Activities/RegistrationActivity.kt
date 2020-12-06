@@ -87,5 +87,9 @@ class RegistrationActivity : AppCompatActivity() {
                 }
 
         }
+
+        login.setOnClickListener {
+            finish()
+        }
     }
 }
