@@ -17,6 +17,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_note_listing.*
+import kotlinx.android.synthetic.main.search_card.*
 import kotlinx.android.synthetic.main.search_card.view.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -101,12 +102,9 @@ class NoteListing : AppCompatActivity() {
         }
 
         defaultList.setOnClickListener {
-            var sortedlist = noteListItems!!.sortedWith(compareBy { it.noteDate }).reversed()
+
             noteListItems!!.clear()
-            for (li in sortedlist) {
-                noteListItems!!.add(li)
-            }
-            noteListAdapter!!.notifyDataSetChanged()
+            getNotes()
         }
 
         search.setOnClickListener {
@@ -149,10 +147,59 @@ class NoteListing : AppCompatActivity() {
         val labelsearch=view!!.labelSearch.text.toString()
         val textsearch=view!!.textSearch.text.toString()
         Log.d("searching by tag:",titlesearch)
+        var searchlist=searchByTitle(titlesearch)
+        searchlist.plusAssign(searchByLabel(labelsearch))
+        searchlist.plusAssign(searchByText(textsearch))
+
+        noteListItems!!.clear()
+        for (li in searchlist){
+            noteListItems!!.add(li)
+        }
+
 
 
         noteListAdapter!!.notifyDataSetChanged()
         dialog!!.dismiss()
+
+
+    }
+
+    private fun searchByTitle(title: String): ArrayList<Note> {
+        var listofnotesbytitle= ArrayList<Note>()
+        if (!title.isBlank()) {
+            for (li in noteListItems!!) {
+                if (li.noteTitle!!.contains(title))
+                    listofnotesbytitle.add(li)
+
+            }
+        }
+        return listofnotesbytitle
+    }
+
+    private fun searchByText(text: String): ArrayList<Note> {
+        var listofnotesbytitle= ArrayList<Note>()
+        if (!text.isBlank()) {
+            for (li in noteListItems!!) {
+                if (li.text!!.contains(text))
+                    listofnotesbytitle.add(li)
+
+            }
+        }
+        return listofnotesbytitle
+    }
+
+
+    private fun searchByLabel(label: String): ArrayList<Note> {
+
+        var listofnotesbylabel= ArrayList<Note>()
+        if (!label.isBlank()) {
+            for (li in noteListItems!!) {
+                if (li.noteLabel!!.contains(label))
+                    listofnotesbylabel.add(li)
+
+            }
+        }
+        return listofnotesbylabel
 
 
     }

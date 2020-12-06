@@ -211,6 +211,7 @@ class NoteTaking : AppCompatActivity() {
                 if (exists){
                     val newNote=updatedNote()
                     updateNote(newNote!!,noteId)
+                    finish()
                 }else{
                     createNote()
                 }
