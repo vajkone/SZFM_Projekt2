@@ -17,3 +17,5 @@
 | Garbóczy Vajk |Keresés gombra kattintva felugrik a keresési felület| Sikeres | gombnyomásra betöltődik a layout| igen |
 | Garbóczy Vajk |Keresési felületen "keresés" gombra nyomva keresünk a Note listában| Sikeres | Azokat a Note-okat kapjuk vissza listában amik tartalmazzák a beírt stringet| igen |
 | Garbóczy Vajk |Gombra kattintva alaphelyzetbe állítjuk Note listánkat| Sikeres | A lista elemek visszarendeződnek alaphelyzetükbe| igen |
+| Kiss Máté |Felugró ablak megkérdezi,hogy biztos törölni szeretnénk-e a Todo-t| Sikeres | véletlen törlés elleni védelem  | igen |
+| Kiss Máté |Todo felvétele a listába | Sikeres | Todo felvétele az adatbázisba  | igen |
