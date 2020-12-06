@@ -19,3 +19,5 @@
 | Garbóczy Vajk |Gombra kattintva alaphelyzetbe állítjuk Note listánkat| Sikeres | A lista elemek visszarendeződnek alaphelyzetükbe| igen |
 | Kiss Máté |Felugró ablak megkérdezi,hogy biztos törölni szeretnénk-e a Todo-t| Sikeres | véletlen törlés elleni védelem  | igen |
 | Kiss Máté |Todo felvétele a listába | Sikeres | Todo felvétele az adatbázisba  | igen |
+| Mózes Nóra | Todo törlése a listából | Sikeres | Todo törlése az adatbázisból | igen |
+| Mózes Nóra | Habit törlése a listából | Sikeres | Habit törlése az adatbázisból | igen |
