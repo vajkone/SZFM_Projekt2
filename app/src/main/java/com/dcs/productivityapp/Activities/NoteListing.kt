@@ -1,10 +1,12 @@
 package com.dcs.productivityapp.Activities
 
 import android.app.Activity
+import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.dcs.productivityapp.Controller.NoteListAdapter
@@ -15,6 +17,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_note_listing.*
+import kotlinx.android.synthetic.main.search_card.view.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -32,6 +35,8 @@ class NoteListing : AppCompatActivity() {
     private var currentUser= FirebaseAuth.getInstance().currentUser
     private var sortedByTitle = false
     private var sortedByDate = false
+    private var view: View? = null
+    private var dialog: AlertDialog? = null
 
     private val notesDocRef= Firebase.firestore.collection("users")
         .document(currentUser!!.uid)
@@ -104,6 +109,18 @@ class NoteListing : AppCompatActivity() {
             noteListAdapter!!.notifyDataSetChanged()
         }
 
+        search.setOnClickListener {
+
+            view = View.inflate(this, R.layout.search_card, null)
+            val builder = AlertDialog.Builder(this)
+            builder.setView(view)
+
+            dialog = builder.create()
+            dialog!!.show()
+            dialog!!.window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+        }
+
 
     }
 
@@ -126,23 +143,18 @@ class NoteListing : AppCompatActivity() {
         }
     }
 
-    private fun getNotesOrdered()= CoroutineScope(Dispatchers.IO).launch {
-        try {
-            val querySnapshot=notesDocRef.orderBy("Title").get().await()
+    fun onSearchClicked(v: View){
+        val titlesearch=view!!.titleSearch.text.toString()
 
-            for (doc in querySnapshot.documents) {
+        val labelsearch=view!!.labelSearch.text.toString()
+        val textsearch=view!!.textSearch.text.toString()
+        Log.d("searching by tag:",titlesearch)
 
-                val note = doc.toObject<Note>()
-                noteListItems!!.add(note!!)
-                Log.d("Added note: ","${note.noteTitle}")
-            }
-            withContext(Dispatchers.Main){
-                noteListAdapter!!.notifyDataSetChanged()
-            }
 
-        }catch (e: Exception){
-            Log.e("Error: ",e.message)
-        }
+        noteListAdapter!!.notifyDataSetChanged()
+        dialog!!.dismiss()
+
+
     }
 
     private fun getNoteById(id:String) = CoroutineScope(Dispatchers.IO).launch {
