@@ -31,6 +31,7 @@ class NoteListing : AppCompatActivity() {
     private var noteListItems: ArrayList<Note>? = null
     private var currentUser= FirebaseAuth.getInstance().currentUser
     private var sortedByTitle = false
+    private var sortedByDate = false
 
     private val notesDocRef= Firebase.firestore.collection("users")
         .document(currentUser!!.uid)
@@ -78,6 +79,20 @@ class NoteListing : AppCompatActivity() {
             }
             noteListAdapter!!.notifyDataSetChanged()
             sortedByTitle=true
+        }
+
+        dateBtn.setOnClickListener {
+            if (sortedByDate){
+                noteListItems!!.reverse()
+            }else {
+                var sortedlist = noteListItems!!.sortedWith(compareBy { it.noteDate })
+                noteListItems!!.clear()
+                for (li in sortedlist) {
+                    noteListItems!!.add(li)
+                }
+            }
+            noteListAdapter!!.notifyDataSetChanged()
+            sortedByDate=true
         }
 
 
