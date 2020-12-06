@@ -12,3 +12,8 @@
 | Mózes Nóra | Cím nélküli mentés | felugró üzenet kapása | "toast" kiírása | igen |
 | Kiss Máté |Felugró ablak,megkérdezi hogy szeretnénk-e menteni | Sikeres | véletlen kilépés elleni védelem | igen |
 | Garbóczy Vajk |Felugró ablak megkérdezi,hogy biztos törölni szeretnénk-e| Sikeres | véletlen törlés elleni védelem| igen |
+| Garbóczy Vajk |Gombra kattintva rendezzük a Note listánkat| Sikeres | A lista elemek ABC szerinti sorba rendeződnek| igen |
+| Garbóczy Vajk |Gombra kattintva rendezzük a Note listánkat| Sikeres | A lista elemek dátum szerinti sorba rendeződnek| igen |
+| Garbóczy Vajk |Keresés gombra kattintva felugrik a keresési felület| Sikeres | gombnyomásra betöltődik a layout| igen |
+| Garbóczy Vajk |Keresési felületen "keresés" gombra nyomva keresünk a Note listában| Sikeres | Azokat a Note-okat kapjuk vissza listában amik tartalmazzák a beírt stringet| igen |
+| Garbóczy Vajk |Gombra kattintva alaphelyzetbe állítjuk Note listánkat| Sikeres | A lista elemek visszarendeződnek alaphelyzetükbe| igen |
