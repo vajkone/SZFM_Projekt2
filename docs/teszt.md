@@ -21,3 +21,10 @@
 | Kiss Máté |Todo felvétele a listába | Sikeres | Todo felvétele az adatbázisba  | igen |
 | Mózes Nóra | Todo törlése a listából | Sikeres | Todo törlése az adatbázisból | igen |
 | Mózes Nóra | Habit törlése a listából | Sikeres | Habit törlése az adatbázisból | igen |
+| Földesi Zoltán |  Habitek kilistázása| Megjelennek a habitek  |getHabits()  | igen |
+| Földesi Zoltán |  Habit felvétele a listába | Sikeres |createHabit,saveHabit()  | igen |
+| Földesi Zoltán |  Habitre való kattintás | Habit összegző képernyő behozása | habitSum | igen |
+| Földesi Zoltán |  Habit checkbox bekattintása | Checkbox ki lesz pipálva |updateHabit()  | igen |
+| Földesi Zoltán | Dátumok megfelelő változása | Sikeres |onCreate()  | igen |
+| Földesi Zoltán | Checkboxok csúszása | Sikeres | slideHabit()  | igen |
+| Földesi Zoltán |  Cím nélküli mentés | Felugró ablak jelzi,hogy adjunk meg címet | Cím nélküli mentés elleni védelem  | igen |
