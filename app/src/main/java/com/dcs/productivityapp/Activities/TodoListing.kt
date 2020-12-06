@@ -25,6 +25,7 @@ import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_note_listing.view.*
 import kotlinx.android.synthetic.main.activity_todo_listing.*
+import kotlinx.android.synthetic.main.search_card.view.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -82,7 +83,19 @@ class TodoListing : AppCompatActivity() {
             alertDialog.show()
         }
 
+        defaultList2.setOnClickListener {
+
+            todoListItems!!.clear()
+            getTodos()
+        }
+
+        checkBtn.setOnClickListener {
+            todoListItems!!.clear()
+            getDoneTodos()
+        }
+
     }
+
 
     private fun createTodo(s: EditText) {
 
@@ -133,6 +146,29 @@ class TodoListing : AppCompatActivity() {
                 val todo = doc.toObject<ToDoModel>()
                 todoListItems!!.add(todo!!)
                 Log.d("Added todo: ","${todo.itemDataText}")
+            }
+            withContext(Dispatchers.Main){
+                ToDoAdapter!!.notifyDataSetChanged()
+            }
+
+        }catch (e: Exception){
+            Log.e("Error: ",e.message)
+        }
+    }
+
+    private fun getDoneTodos()= CoroutineScope(Dispatchers.IO).launch {
+        try {
+            val querySnapshot=todosDocRef.get().await()
+
+            for (doc in querySnapshot.documents) {
+
+                val todo = doc.toObject<ToDoModel>()
+                if (todo != null) {
+                    if(todo.done != false) {
+                        todoListItems!!.add(todo!!)
+                        Log.d("Added todo: ", "${todo.itemDataText}")
+                    }
+                }
             }
             withContext(Dispatchers.Main){
                 ToDoAdapter!!.notifyDataSetChanged()
