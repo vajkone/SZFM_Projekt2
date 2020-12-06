@@ -146,13 +146,24 @@ class HabitListAdapter (private var list: MutableList<Habits>, private val conte
     private fun updatedHabit(habitin : Habits? ): Habits? {
 
         var habit = Habits()
+        if (habitin?.done!! == false)
+        {
+            Log.d("habit",habitin.done.toString())
+            habit.days = habitin.days+1
+
+        }
+        else{
+            habit.days = habitin.days
+        }
+
+
         habit.itemDataText = habitin?.itemDataText
         habit.done = !habitin?.done!!
         habit.done2 = habitin.done2!!
         habit.done3 = habitin.done3!!
         habit.ID = habitin.ID
         habit.checkDate = habitin.checkDate
-        habit.days = habitin.days+1
+
         habit.creationDate = habitin.creationDate
         Log.d("SUCCES",habitin.done.toString())
         Log.d("SUCCES",habit.done.toString())

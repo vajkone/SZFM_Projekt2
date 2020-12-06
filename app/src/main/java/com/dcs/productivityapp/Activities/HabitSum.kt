@@ -19,6 +19,7 @@ import kotlinx.android.synthetic.main.activity_note_creation.*
 import kotlinx.coroutines.*
 import kotlinx.coroutines.tasks.await
 import java.lang.Exception
+import java.lang.Math.abs
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.temporal.ChronoUnit
@@ -59,11 +60,11 @@ class HabitSum : AppCompatActivity() {
             }
             withContext(Dispatchers.Main) {
                 val formatter =  DateTimeFormatter.ofPattern("yyyy.MM.dd")
-                val day = LocalDate.parse(habit.checkDate, formatter)
+                val day = LocalDate.parse(habit.creationDate, formatter)
                 val diff = ChronoUnit.DAYS.between(LocalDate.now(),day)
                 Log.d("diff",diff.toString())
 
-                progressBar.setMax(Math.ceil(diff.toDouble()).toInt())
+                progressBar.setMax(abs((Math.ceil(diff.toDouble()).toInt())))
                 Log.d("diff",Math.ceil(diff.toDouble()).toInt().toString())
 
                 progressBar.setMin(0)
