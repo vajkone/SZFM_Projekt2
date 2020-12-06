@@ -28,3 +28,8 @@
 | Földesi Zoltán | Dátumok megfelelő változása | Sikeres |onCreate()  | igen |
 | Földesi Zoltán | Checkboxok csúszása | Sikeres | slideHabit()  | igen |
 | Földesi Zoltán |  Cím nélküli mentés | Felugró ablak jelzi,hogy adjunk meg címet | Cím nélküli mentés elleni védelem  | igen |
+| Kiss Máté |  Cím nélküli Todo mentés | Felugró ablak jelzi,hogy adjunk meg címet | Cím nélküli Todo mentés elleni védelem  | igen |
+| Kiss Máté |  Todo Checkbox kattintás | sikeres|  A checkbox kattintásra változik | igen |
+| Kiss Máté |  Kész Todok listázása | sikeres|  A done lista kiíratása, getDoneTodo()  | igen |
+| Kiss Máté |  Kijelentkezés | sikeres|  Felhasználó kijelentkezés | igen |
+| Mózes Nóra | Menu használat | A menü megfelelően működik | menu gombok | igen |
