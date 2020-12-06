@@ -30,6 +30,7 @@ class NoteListing : AppCompatActivity() {
     private var noteList: MutableList<Note>? = null
     private var noteListItems: ArrayList<Note>? = null
     private var currentUser= FirebaseAuth.getInstance().currentUser
+    private var sortedByTitle = false
 
     private val notesDocRef= Firebase.firestore.collection("users")
         .document(currentUser!!.uid)
@@ -64,11 +65,46 @@ class NoteListing : AppCompatActivity() {
             val intent = Intent(this,NoteTaking::class.java)
             startActivityForResult(intent,1)
         }
+
+        alphaBtn.setOnClickListener {
+            if (sortedByTitle){
+                noteListItems!!.reverse()
+            }else {
+                var sortedlist = noteListItems!!.sortedWith(compareBy { it.noteTitle })
+                noteListItems!!.clear()
+                for (li in sortedlist) {
+                    noteListItems!!.add(li)
+                }
+            }
+            noteListAdapter!!.notifyDataSetChanged()
+            sortedByTitle=true
+        }
+
+
     }
 
     private fun getNotes()= CoroutineScope(Dispatchers.IO).launch {
         try {
             val querySnapshot=notesDocRef.get().await()
+
+            for (doc in querySnapshot.documents) {
+
+                val note = doc.toObject<Note>()
+                noteListItems!!.add(note!!)
+                Log.d("Added note: ","${note.noteTitle}")
+            }
+            withContext(Dispatchers.Main){
+                noteListAdapter!!.notifyDataSetChanged()
+            }
+
+        }catch (e: Exception){
+            Log.e("Error: ",e.message)
+        }
+    }
+
+    private fun getNotesOrdered()= CoroutineScope(Dispatchers.IO).launch {
+        try {
+            val querySnapshot=notesDocRef.orderBy("Title").get().await()
 
             for (doc in querySnapshot.documents) {
 
